@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R and SQL on Kelly Bodwin</title>
+    <link>/blog/sql-series/</link>
+    <description>Recent content in R and SQL on Kelly Bodwin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/sql-series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Working with SQL using {dbplyr}.</title>
+      <link>/blog/sql-series/02-sql/</link>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/sql-series/02-sql/</guid>
+      <description>Making a database on AmazonStep 1: Create an AWS account. I did it a long time ago, it&amp;rsquo;s pretty straightforward, I&amp;rsquo;m not going to re-do it here for no reason.
+Step 2: Follow Items 1-5 only in this tutorial to create a databaset instance.
+Step 3: Make sure you choose the free tier! Select whatever username and password you want - but it&amp;rsquo;s a pain in the butt to add additional users, so if security is not a huge concern and you want your database to be broadly accessible, choose a username and password that you&amp;rsquo;re willing to share.</description>
+    </item>
+    
+    <item>
+      <title>Setting up a SQL database with AWS.</title>
+      <link>/blog/sql-series/01-sql/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/sql-series/01-sql/</guid>
+      <description>Making a database on AmazonStep 1: Create an AWS account. I did it a long time ago, it&amp;rsquo;s pretty straightforward, I&amp;rsquo;m not going to re-do it here for no reason.
+Step 2: Follow Items 1-5 only in this tutorial to create a databaset instance.
+Step 3: Make sure you choose the free tier! Select whatever username and password you want - but it&amp;rsquo;s a pain in the butt to add additional users, so if security is not a huge concern and you want your database to be broadly accessible, choose a username and password that you&amp;rsquo;re willing to share.</description>
+    </item>
+    
+  </channel>
+</rss>

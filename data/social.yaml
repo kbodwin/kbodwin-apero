@@ -1,0 +1,13 @@
+social:
+- icon: instagram
+  icon_pack: fab
+  link: https://www.instagram.com/kellbod
+- icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/kellybodwin
+- icon: github
+  icon_pack: fab
+  link: https://github.com/kbodwin
+- icon: rss
+  icon_pack: fas
+  link: /blog/index.xml

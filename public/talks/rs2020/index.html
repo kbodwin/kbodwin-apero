@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>R tools for teaching and presentation</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Kelly Bodwin" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# R tools for teaching and presentation
+## <img src='family.png' style='width:300px;height:300px;'>
+### Kelly Bodwin
+### These slides: <strong>kellybodwin.com/talks/rs2020</strong>
+
+---
+
+
+
+
+
+
+
+&lt;style type="text/css"&gt;
+img {
+  height: 400px;
+}
+
+.remark-code {
+  font-size: 30px;
+}
+
+.remark-slide {
+  background-size: cover;
+}
+&lt;/style&gt;
+
+---
+class: center, middle
+
+# **Thesis:**
+
+&lt;br&gt;
+
+--
+
+# Some things are hard (especially for teachers).
+
+&lt;br&gt;
+
+--
+
+# Let's use **R** to make them easier.
+
+---
+class: inverse, center, middle
+
+# **Sneak Preview**
+## Infant package edition
+
+---
+class: inverse, center, middle
+
+# Hard for **very basic R users**:
+
+
+### Making a simple Shiny app
+
+---
+class: center,middle
+
+![](shindig_hex_2.png)
+
+---
+class: inverse
+# **Our idea:** 
+## Wrappers to simplify Shiny
+
+
+```r
+create_app("basic_app",
+           layout = "default", 
+           data = "faithful") %&gt;%
+  add_histogram(x = "&lt;text&gt;", 
+                bins = "&lt;slider&gt;",
+                title = "Old Faithful")
+```
+
+---
+
+![](simple.gif)
+
+---
+class: inverse, center, middle
+
+# Hard for **teachers**:
+### Updating course materials every year
+
+---
+class: center, middle
+
+
+![](templar_hex.png)
+
+---
+class: inverse, center, middle
+
+# **Our idea:**
+
+## Take advantage of templating in RS projects and R Markdown
+
+---
+background-image: url("templar_project.png")
+background-position: center
+background-size: fill
+
+---
+class: inverse, center, middle
+# **Our idea:**
+## Take advantage of templating in RS projects and R Markdown
+## Use R and yaml to automate "filler"
+
+---
+background-image: url("templar_syllabus.png")
+background-position: center
+background-size: cover
+
+---
+
+![](flair_gif.gif)
+---
+class: inverse, center, middle
+
+# Hard for **everyone**:
+
+## Formatting source code for presentations
+
+---
+
+
+&lt;code class ='r hljs remark-code'&gt;&lt;span style='font-size:40'&gt;&lt;span style='color:cornflowerblue'&gt;my_presentation&lt;/span&gt; %&gt;%&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:40'&gt; &amp;nbsp;&lt;span style='background-color:pink'&gt;&lt;span style='background-color:light green'&gt;highlight_code&lt;/span&gt;&lt;/span&gt;("&lt;span style='background-color:#ffff7f'&gt;this is important&lt;/span&gt;") %&gt;%&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:40'&gt; &amp;nbsp;&lt;span style='background-color:pink'&gt;get_frustrated&lt;/span&gt;() %&gt;%&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:40'&gt; &amp;nbsp;&lt;span style='background-color:pink'&gt;not_reproducible&lt;/span&gt;()&lt;/span&gt;&lt;/code&gt;
+
+---
+class: center
+
+## Me trying to highlight my code examples for lecture...
+
+![](johanna_gif.gif)
+---
+class: center, middle
+
+![](flair_hex.png)
+
+## 👉 github.com/kbodwin/flair
+
+---
+class: inverse, center
+# How to add flair to your code
+
+![](lotsofflair.jpg)
+
+---
+# **Step One:**
+## Regular ol' code chunk (with a name)
+
+````
+
+```{r how_to_pipe, include = FALSE}
+
+iris %&gt;%
+  group_by(Species) %&gt;%
+  summarize(mean(Sepal.Length))
+
+```
+
+````
+
+
+
+
+
+
+
+---
+# **Step Two:**
+## Reference chunk by name with `decorate`
+
+
+&lt;code class ='r hljs remark-code'&gt;&lt;span style='background-color:#ffff7f'&gt;decorate&lt;/span&gt;("how_to_pipe") %&gt;%&lt;/code&gt;
+
+---
+# **Step Three:**
+
+![](15pieces.jpg)
+
+---
+
+# **Step Three:**
+## Add your flair with `flair_*` functions
+
+
+&lt;code class ='r hljs remark-code'&gt;decorate("how_to_pipe") %&gt;%&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style='background-color:#ffff7f'&gt;flair&lt;/span&gt;("%&gt;%") %&gt;%&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style='background-color:#ffff7f'&gt;flair_funs&lt;/span&gt;(color = "cornflowerblue") %&gt;%&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style='background-color:#ffff7f'&gt;flair_args&lt;/span&gt;(color = "indianred")&lt;/code&gt;
+
+---
+# **Step Four**
+## There is no step 4.  You're done!
+
+
+
+&lt;code class ='r hljs remark-code'&gt;iris &lt;span style='background-color:#ffff7f'&gt;%&gt;%&lt;/span&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style='color:cornflowerblue'&gt;group_by&lt;/span&gt;(Species) &lt;span style='background-color:#ffff7f'&gt;%&gt;%&lt;/span&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&lt;span style='color:cornflowerblue'&gt;summarize&lt;/span&gt;(&lt;span style='color:cornflowerblue'&gt;mean&lt;/span&gt;(Sepal.Length))&lt;/code&gt;
+
+```
+
+## # A tibble: 3 x 2
+##   Species    `mean(Sepal.Length)`
+##   &lt;fct&gt;                     &lt;dbl&gt;
+## 1 setosa                     5.01
+## 2 versicolor                 5.94
+## 3 virginica                  6.59
+
+```
+
+---
+class: inverse, center, middle
+
+# Speed **FAQ**
+
+---
+# **FAQ:**
+## Does this work in `ioslides`, `xaringan`, etc?
+
+![](mostlytrue.png)
+&lt;/img&gt;
+
+---
+# **FAQ:**
+## Does this work in `ioslides`, `xaringan`, etc?
+
+Sometimes we need to hard-code the formatting.  
+
+Easily done if you tell me the doc type.
+
+File issue on GitHub to request more functionality.
+
+---
+# **FAQ:**
+## What happens when you run in console/Rmd source?
+
+--
+
+1. Code actually runs invisibly -&gt; can create objects!
+
+--
+
+2. Source code w/flair is previewed in viewer pane.
+
+---
+# **FAQ:**
+## Does this work with LaTeX knitting?
+
+--
+
+## Not yet, but it is high priority!
+
+---
+# **FAQ:**
+## When will this be on CRAN?
+
+--
+&lt;strike&gt; two months ago &lt;/strike&gt;
+--
+![](soon_gif.gif)
+
+---
+&lt;style type="text/css"&gt;
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+&lt;/style&gt;
+
+
+
+```r
+decorate("Thank you!", 
+         eval = FALSE) %&gt;%
+  flair("Thank you!",
+        before = "&lt;span class='blinking'&gt;",
+        after = "&lt;/span&gt;")
+```
+
+
+
+
+&lt;code class ='r hljs remark-code'&gt;&lt;span class='blinking'&gt;Thank you!&lt;/span&gt;&lt;/code&gt;
+
+---
+class: inverse, center, middle
+# Find the **flair** package:
+
+## **github.com/kbodwin/flair**
+
+# Find me:
+
+## **@KellyBodwin**
+
+## **kelly-bodwin.com**
+
+# Take hex stickers!
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"countIncrementalSlides": false,
+"highlightLines": true,
+"highlightStyle": "github"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

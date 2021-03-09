@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>campfire on Kelly Bodwin</title>
+    <link>/categories/campfire/</link>
+    <description>Recent content in campfire on Kelly Bodwin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/campfire/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A campfire</title>
+      <link>/blog/campfire/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/campfire/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

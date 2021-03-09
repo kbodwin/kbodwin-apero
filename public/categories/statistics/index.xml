@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>statistics on Kelly Bodwin</title>
+    <link>/categories/statistics/</link>
+    <description>Recent content in statistics on Kelly Bodwin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Statistical Computing with R</title>
+      <link>/courses/stat541/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/stat541/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introduction to R for Statistics and Data Science</title>
+      <link>/courses/stat331/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/stat331/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introduction to the Field of Statistics (and R)</title>
+      <link>/courses/stat150/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/stat150/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

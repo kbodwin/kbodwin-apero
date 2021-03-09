@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kelly Bodwin, Ph.D. on Kelly Bodwin</title>
+    <link>/</link>
+    <description>Recent content in Kelly Bodwin, Ph.D. on Kelly Bodwin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 18 Feb 2019 12:27:33 -0600</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Working with SQL using {dbplyr}.</title>
+      <link>/blog/sql-series/02-sql/</link>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/sql-series/02-sql/</guid>
+      <description>Making a database on AmazonStep 1: Create an AWS account. I did it a long time ago, it&amp;rsquo;s pretty straightforward, I&amp;rsquo;m not going to re-do it here for no reason.
+Step 2: Follow Items 1-5 only in this tutorial to create a databaset instance.
+Step 3: Make sure you choose the free tier! Select whatever username and password you want - but it&amp;rsquo;s a pain in the butt to add additional users, so if security is not a huge concern and you want your database to be broadly accessible, choose a username and password that you&amp;rsquo;re willing to share.</description>
+    </item>
+    
+    <item>
+      <title>Setting up a SQL database with AWS.</title>
+      <link>/blog/sql-series/01-sql/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/sql-series/01-sql/</guid>
+      <description>Making a database on AmazonStep 1: Create an AWS account. I did it a long time ago, it&amp;rsquo;s pretty straightforward, I&amp;rsquo;m not going to re-do it here for no reason.
+Step 2: Follow Items 1-5 only in this tutorial to create a databaset instance.
+Step 3: Make sure you choose the free tier! Select whatever username and password you want - but it&amp;rsquo;s a pain in the butt to add additional users, so if security is not a huge concern and you want your database to be broadly accessible, choose a username and password that you&amp;rsquo;re willing to share.</description>
+    </item>
+    
+    <item>
+      <title>Netlify</title>
+      <link>/collection/day02/01-netlify/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/day02/01-netlify/</guid>
+      <description>So far, we&amp;rsquo;ve been leveraging GitHub Pages for publishing. This works great, but for blogdown we&amp;rsquo;ll start using Netlify. Let&amp;rsquo;s start RIGHT NOW with a site we&amp;rsquo;ve already built and published.
+Pre-requisitesPick either your postcards site, or your distill site from day 01. Refresh your memory- which repository was it again?</description>
+    </item>
+    
+    <item>
+      <title>A GitHub profile</title>
+      <link>/collection/day01/01-github/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/day01/01-github/</guid>
+      <description>Profilehttps://docs.github.com/en/github/setting-up-and-managing-your-github-profile/personalizing-your-profile
+Pin projects to profilehttps://docs.github.com/en/github/setting-up-and-managing-your-github-profile/pinning-items-to-your-profile
+Profile READMEThis is new! Let&amp;rsquo;s do it:
+https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme</description>
+    </item>
+    
+    <item>
+      <title>Prework</title>
+      <link>/collection/prework/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/prework/</guid>
+      <description>Welcome to the Introducing Yourself Online workshop! We look forward to meeting you. Before attending the workshop, please complete the following prework.
+Set up RStudio CloudSign up for a free RStudio Cloud account at https://rstudio.cloud/ before the workshop. I recommend logging in with an existing Google or GitHub account, if you have one (rather than creating a new account with another password you have to remember).</description>
+    </item>
+    
+    <item>
+      <title>A postcard</title>
+      <link>/collection/day01/02-postcards/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/day01/02-postcards/</guid>
+      <description>Pre-requisitesFirst, make sure you have the latest version of the postcards package installed from CRAN:
+install.packages(&amp;quot;postcards&amp;quot;)Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:
+ Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS).  packageVersion(&amp;quot;postcards&amp;quot;)[1] ‘0.2.0’Create GitHub repoOnline.</description>
+    </item>
+    
+    <item>
+      <title>Using blogdown</title>
+      <link>/collection/day02/02-blogdown/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/day02/02-blogdown/</guid>
+      <description>Pre-requisitesFirst, make sure you have the latest version of the blogdown package installed from CRAN:
+install.packages(&amp;quot;blogdoown&amp;quot;)Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:
+ Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS).  packageVersion(&amp;quot;blogdown&amp;quot;)[1] ‘1.0’Create GitHub repoOnline.</description>
+    </item>
+    
+    <item>
+      <title>A distill site</title>
+      <link>/collection/day01/03-distill/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/day01/03-distill/</guid>
+      <description>Pre-requisitesFirst, make sure you have the latest version of the distill package installed from CRAN:
+install.packages(&amp;quot;distill&amp;quot;) Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:
+ Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS).  &amp;lt;!-- --&amp;gt;packageVersion(&amp;quot;distill&amp;quot;)[1] ‘1.2’ Create GitHub repoOnline.</description>
+    </item>
+    
+    <item>
+      <title>Warm woolen mittens</title>
+      <link>/collection/day02/03-blogdown/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/day02/03-blogdown/</guid>
+      <description>Hi, I&#39;m the here-bot cat!Use me to find your way in your website.
+Here I am:content/collection\day02\03-blogdown\index.mdTo remove me, delete this line inside that file: {{&amp;lt; here &amp;gt;}}
+My content section is:collectionMy layout is:single-series part 2!does this work? now for some very cool thingsmoreget ready!</description>
+    </item>
+    
+    <item>
+      <title>flair</title>
+      <link>/software/flair/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/software/flair/</guid>
+      <description>flair is a package for adding highlighting and annotation to the source code chunks produced by R Markdown. AboutThe goal of flair is to give users an easy and reproducible way to change the colors and highlighting in source code chunks. For example,
+iris %&amp;gt;%
+group_by(Species) %&amp;gt;%
+summarize(mean(Sepal.Length))#&amp;gt; # A tibble: 3 x 2#&amp;gt; Species `mean(Sepal.Length)`#&amp;gt; &amp;lt;fct&amp;gt; &amp;lt;dbl&amp;gt;#&amp;gt; 1 setosa 5.</description>
+    </item>
+    
+    <item>
+      <title>templar</title>
+      <link>/software/templar/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/software/templar/</guid>
+      <description>templar is a package that lets educators auto-generate repetitive course material content from R Markdown source files and yaml headers. AboutThis package is still in development.
+The goal is to create a set of templates for course material sets, such as the syllabus, assignments, exams, and labs. Information about each course will be stored in one unified yaml file, so that the materials can be updated each year (or quarter or semester) without having to hunt through each individual file and search for dates and details.</description>
+    </item>
+    
+    <item>
+      <title>Advanced Statistical Computing with R</title>
+      <link>/courses/stat541/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/stat541/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introduction to R for Statistics and Data Science</title>
+      <link>/courses/stat331/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/stat331/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introduction to the Field of Statistics (and R)</title>
+      <link>/courses/stat150/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/stat150/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intro to Tidyverse Workshop Materials</title>
+      <link>/courses/rworkshop-2021/</link>
+      <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/rworkshop-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diary of a Quarantined Friday</title>
+      <link>/blog/quarantine/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/quarantine/</guid>
+      <description>10:29amI wake up exactly one minute before my alarm. Good job, me! I open my phone to a sea of notifications. I ignore them and open twitter to see the latest coronavirus news.
+10:30amMy alarm goes off, scaring the bejeezus out of me.
+10:45am - 10:55amI pull myself away from the stress-scrolling and take a shower.</description>
+    </item>
+    
+    <item>
+      <title>R Workshop Materials</title>
+      <link>/courses/rworkshop-2019/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/rworkshop-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tachyons for Style</title>
+      <link>/projects/giraffes/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/giraffes/</guid>
+      <description>Tachyons is a design system that allows you to design gorgeous interfaces in the browser with little effort. Because SpeedBuilding this static site generator theme was the first time I used an Atomic (or Functional) CSS system like Tachyons. It&amp;rsquo;s a design system that provides very small (which means fast) CSS modules that you can use in your HTML. So, rather than writing every line of CSS, you apply the style you need as you write your HTML with easy to understand shorthand class names.</description>
+    </item>
+    
+    <item>
+      <title>Palmer Penguins</title>
+      <link>/projects/penguins/</link>
+      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/penguins/</guid>
+      <description>“Grid is the very first CSS module created specifically to solve the layout problems we&amp;rsquo;ve all been hacking our way around for as long as we&amp;rsquo;ve been making websites.”— Chris House, A Complete Guide to CSS Grid Layout 1
+ Since I began building websites in Y2K, I&amp;rsquo;ve lost count how many times the phrase &amp;ldquo;&amp;hellip;there&amp;rsquo;s got to be a better way to do this&amp;rdquo; has passed my lips.</description>
+    </item>
+    
+    <item>
+      <title>Bakeoff</title>
+      <link>/projects/bakeoff/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/bakeoff/</guid>
+      <description>Formspree makes it easy to receive submissions from HTML forms on your static website. Functional FormThis theme has a form-to-email feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the front matter of the form (/content/forms/contact.md). Of course, the example shown below (your@email.here) must not be used.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 25 Feb 2019 13:38:41 -0600</pubDate>
+      
+      <guid>/contact/</guid>
+      <description>** Contact page don&amp;rsquo;t contain a body, just the front matter above. See form.html in the layouts folder **</description>
+    </item>
+    
+    <item>
+      <title>Typography Styles &amp; Element Examples</title>
+      <link>/elements/</link>
+      <pubDate>Mon, 18 Feb 2019 12:27:33 -0600</pubDate>
+      
+      <guid>/elements/</guid>
+      <description>Font SizesAAAAAAAA6rem
+(96px)5rem
+(80px)3rem
+(48px)2.25rem
+(36px)1.5rem
+(24px)1.25rem
+(20px)1rem
+(16px).875rem
+(14px)Type SamplesHead&amp;shy;lineSub&amp;shy;head&amp;shy;lineLevel 1 HeadingOne page to rule them all...well, not really. This page displays sample typography and page elements to illustrate their style. Things like headings and paragraphs showing the beautiful type scale, form elements, tabular data, and image layouts just to name a few.</description>
+    </item>
+    
+    <item>
+      <title>Contributors</title>
+      <link>/contributors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contributors/</guid>
+      <description>Thank you to all the folks who have contributed both technical and creative skills to this project:
+  Desirée De Leon 🦒 (designed 5 of the custom color themes, made illustrations for the workshop, and provided general aesthetic feedback along the way)
+  Garrick Aden-Buie 🧙‍♀️ (debugged headroom.js and lent his panelset.js code to the theme)
+  Allison Horst 🐕 (awesome illustrations of campfires, seedlings, and evergreens, as well as my R Markdown hedgehog mascot 🦔)</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/license/</guid>
+      <description>My blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License.
+</description>
+    </item>
+    
+  </channel>
+</rss>

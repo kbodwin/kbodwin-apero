@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.80.0" />
+<title>Setting up a SQL database with AWS. | Kelly Bodwin</title>
+
+
+<meta property="twitter:site" content="@kellybodwin">
+<meta property="twitter:creator" content="@kellybodwin">
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="A guide based on my first experience.">
+
+
+<meta property="og:site_name" content="Kelly Bodwin">
+<meta property="og:title" content="Setting up a SQL database with AWS. | Kelly Bodwin">
+<meta property="og:description" content="A guide based on my first experience." />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="/blog/sql-series/01-sql/" />
+<meta property="og:locale" content="en">
+
+
+
+
+    
+        <meta property="og:image" content="/blog/sql-series/01-sql/featured.png" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="/blog/sql-series/01-sql/featured.png" >
+    
+    
+  <meta itemprop="name" content="Setting up a SQL database with AWS.">
+<meta itemprop="description" content="Making a database on AmazonStep 1: Create an AWS account. I did it a long time ago, it&rsquo;s pretty straightforward, I&rsquo;m not going to re-do it here for no reason.
+Step 2: Follow Items 1-5 only in this tutorial to create a databaset instance.
+Step 3: Make sure you choose the free tier! Select whatever username and password you want - but it&rsquo;s a pain in the butt to add additional users, so if security is not a huge concern and you want your database to be broadly accessible, choose a username and password that you&rsquo;re willing to share.">
+<meta itemprop="datePublished" content="2021-01-27T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-01-27T00:00:00+00:00" />
+<meta itemprop="wordCount" content="581">
+<meta itemprop="image" content="/blog/sql-series/01-sql/featured.png">
+
+
+
+<meta itemprop="keywords" content="hugo-site," />
+
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon2.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon2.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.ec434d63ba421a81bdcb508bafa1f49101284b6fab9465aca3776362152093fe.css" integrity="sha256-7ENNY7pCGoG9y1CLr6H0kQEoS2&#43;rlGWso3djYhUgk/4=" media="screen">
+  
+  
+  
+  <link rel="stylesheet" href="/fonts.css" integrity="" media="screen">
+  
+  
+  <script src="/panelset.min.41f62c42d5f25dd80e81136866f4f1baa1bc17669edfd002e75c0e107953789b.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.07ec8e08cbb63db3a2cf7d4a7df6f7be00c715f13b64d8df6a2c48441ba8b14b.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container single-series">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="/" title="Home">
+      <img src="/img/bluebell.png" class="dib db-l h2 w-auto" alt="Kelly Bodwin">
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt4 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/about/" title="About">About Me</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/courses/" title="courses">Course Materials</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/software/" title="software">R Packages</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/projects/" title="projects">Research Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/blog/" title="Blog">Blog</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/form/" title="form">Inquiries</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+                       
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 pr3-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Setting up a SQL database with AWS.</h1>
+        <h4 class="f4 mt0 mb4 lh-title measure">A guide based on my first experience.</h4>
+        <p class="f6 measure lh-copy mv1">By Kelly Bodwin in <a href="/categories/r">R</a>  <a href="/categories/sql">SQL</a>  <a href="/categories/tutorials">tutorials</a> </p>
+        <p class="f7 db mv0 ttu">January 27, 2021</p>
+      </header>
+      <section class="post-body pt5 pb4">
+        
+
+
+
+<h2 id="making-a-database-on-amazon">Making a database on Amazon
+  <a href="#making-a-database-on-amazon"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p><strong>Step 1:</strong> Create an AWS account.  I did it a long time ago, it&rsquo;s pretty straightforward, I&rsquo;m not going to re-do it here for no reason.</p>
+<p><strong>Step 2:</strong> Follow Items 1-5 only in 
+<a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateDBInstance.html" target="_blank" rel="noopener">this tutorial</a> to create a databaset instance.</p>
+<p><strong>Step 3:</strong> Make sure you choose the free tier!  Select whatever username and password you want - but it&rsquo;s a pain in the butt to add additional users, so if security is not a huge concern and you want your database to be broadly accessible, choose a username and password that you&rsquo;re willing to share.</p>
+<p><img src="aws_rds-2.png" alt=""></p>
+<p><strong>Step 4:</strong> Make sure you switch the &ldquo;Public Access&rdquo; button to <em>Yes</em>.  Again, this is assuming you&rsquo;re using databases because your data is large, not because you have major security needs.</p>
+<p><img src="aws_rds-3.png" alt=""></p>
+<p>(People still need to know the username and password to access the database, even if it is set to Public.)</p>
+<p><strong>Step 5:</strong> Click this thing:</p>
+<p><img src="aws_rds-4.png" alt=""></p>
+<p>Then choose an initial database name:</p>
+<p><img src="aws_rds-5.png" alt=""></p>
+<p><strong>WARNING!  ACHTUNG!  ATTENTION!</strong></p>
+<p>For the love of all that is good, don&rsquo;t skip this step.  For some reason it isn&rsquo;t in most of the tutorials I found online.</p>
+<p>If you don&rsquo;t choose a database name, you create only a &ldquo;database instance&rdquo;, which is like an empty shell where a database should be.</p>
+<p><em>Why is the default behavior to create an empty shell?</em>  No idea.</p>
+<p><em>Can we just add a database to a database instance after creating it?</em>  Undoubtedly, but I can&rsquo;t be arsed to learn that.  The goal here is to stay in my safe R bubble. I sunk about an hour into trying to figure that out, unsuccessfully, before deleting my database instance and making a new one.</p>
+<p><strong>Step 5:</strong> Scroll to the bottom and click &ldquo;Create Database&rdquo;.  You should see something like this:</p>
+<p><img src="aws_rds-6.png" alt=""></p>
+<p>Be patient while Amazon obeys your command and makes your database.  Click the name of your database instance (<code>vineyard-project</code> for me).  You&rsquo;ll see this - notice how the banner says it&rsquo;s still being created, and the &ldquo;Status&rdquo; in the Summary pane says &ldquo;Creating&rdquo;.</p>
+<p><img src="aws_rds-7.png" alt=""></p>
+<p>When it&rsquo;s done, it will look like this:</p>
+<p><img src="aws_rds-9.png" alt=""></p>
+<p><strong>Step 6:</strong> Gather your info.</p>
+<p>You will need:</p>
+<ul>
+<li>
+<p>Your username and password</p>
+</li>
+<li>
+<p>The name of the database that you chose in Step 5</p>
+</li>
+<li>
+<p>Your <em>Endpoint</em> (or &ldquo;host&rdquo;) and your <em>Port</em>, which can be found here:</p>
+</li>
+</ul>
+<p><img src="aws_rds-8.png" alt=""></p>
+
+
+
+
+<h3 id="connecting-from-r">Connecting from R
+  <a href="#connecting-from-r"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Okay so the first thing you have to do is install and load a bunch libraries that help R talk to SQL.</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#900;font-weight:bold">library</span>(dbplyr)
+<span style="color:#900;font-weight:bold">library</span>(odbc)
+<span style="color:#900;font-weight:bold">library</span>(DBI)
+<span style="color:#900;font-weight:bold">library</span>(RMySQL)
+</code></pre></td></tr></table>
+</div>
+</div><p><code>dbplyr</code> is the one that lets you use <code>dplyr</code> R code to sneakily run SQL queries.</p>
+<p>The rest of them are just &ldquo;some packages I need for SQL&rdquo; and I haven&rsquo;t bothered to understand what tasks each one covers, or even which of the functions I&rsquo;m about to use come from which package.  Sorry not sorry.</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">con <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">dbConnect</span>(RMySQL<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">MySQL</span>(), 
+                 user<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;&lt;YOUR USERNAME&gt;&#39;</span>, 
+                 password<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;&lt;YOUR PASSWORD&gt;&#39;</span>, 
+                 dbname<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;&lt;YOUR DATABASE&gt;&#39;</span>,    <span style="color:#998;font-style:italic"># this is &#34;vineyard-project&#34; for me</span>
+                 host<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;&lt;YOUR HOST&gt;&#39;</span>,          <span style="color:#998;font-style:italic"># you found the host and port   </span>
+                 port<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;&lt;YOUR PORT NUMBER&gt;&#39;</span>)   <span style="color:#998;font-style:italic">## in step 6 above </span>
+</code></pre></td></tr></table>
+</div>
+</div><p>You can write data to your brand new SQL server like this:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#900;font-weight:bold">dbWriteTable</span>(con, <span style="color:#d14">&#34;data_counts_orig&#34;</span>, data_counts)
+</code></pre></td></tr></table>
+</div>
+</div><p>This might take a long time, depending on how big your data is.</p>
+<p>If your data isn&rsquo;t already in R, or if it&rsquo;s too big to read into R, I suggest
+using a third-party helper app.</p>
+<p>Stay tuned for Part 2, where we will learn to pull sbusetted SQL data back into R using <code>dbplyr</code>!</p>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="/blog/sql-series/02-sql/">Working with SQL using {dbplyr}. &rarr;</a>
+  
+</div>
+
+      </footer>
+    </article>
+    
+  </section>
+</main>
+
+<aside class="page-sidebar" role="complementary">
+                         
+ 
+
+
+                       
+ 
+
+
+
+
+
+
+
+
+
+
+
+  <img src="/blog/sql-series/sidebar-featured.png" class="db ma0">
+
+
+<div class="blog-info ph4 pt4 pb4 pb0-l">
+  
+
+  <h1 class="f3">R and SQL</h1>
+  <p class="f6 lh-copy measure">I am not a regular SQL user, but it can be useful to have larger datasets stored on a database for ease of sharing.  This series is a documentation of my process of getting myself started working with SQL databases from R.</p>
+  <p class="f7 measure lh-copy i mh0-l">Written by Kelly Bodwin</p>
+
+
+  
+</div>
+
+
+                         
+ 
+
+
+
+<div class="flex items-start sticky ph4 pb4">
+  <div class="w-two-thirds w-50-l ph0">
+    
+    <h2 class="mt3 mb3 f5 fw7 ttu tracked"><a class="no-underline dim" href="/blog/sql-series/">In this series</a></h2>
+    <nav id="SeriesTableOfContents">
+        <ul>
+        
+          
+          <li class="" hugo-nav="/blog/sql-series/02-sql/"><a href="/blog/sql-series/02-sql/">Working with SQL using {dbplyr}.</a></li>
+        
+          
+          <li class="active" hugo-nav="/blog/sql-series/01-sql/"><a href="/blog/sql-series/01-sql/">Setting up a SQL database with AWS.</a></li>
+        
+        </ul>
+      </nav>
+  </div>
+  <details open id="PageTableOfContents">
+    <summary>On this page</summary>
+    <div class="pl2 pr0 mh0">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#making-a-database-on-amazon">Making a database on Amazon</a></li>
+  </ul>
+</nav>
+    </div>
+  </details>
+  
+</div>
+</aside>
+
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2021 Kelly Bodwin, San Luis Opispo, CA
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+      
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.instagram.com/kellbod" target="_blank" rel="noopener">
+      <i class="fab fa-instagram fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://twitter.com/kellybodwin" target="_blank" rel="noopener">
+      <i class="fab fa-twitter fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/kbodwin" target="_blank" rel="noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="/blog/index.xml" >
+      <i class="fas fa-rss fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+      
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="https://help.formspree.io" title="Visit Help Site">Help</a>
+      
+      <a class="dib pv1 ph2 link" href="https://help.formspree.io" title="Privacy Policy">Privacy</a>
+      
+      <a class="dib pv1 ph2 link" href="https://help.formspree.io" title="Terms and Conditions">Terms of Use</a>
+      
+      <a class="dib pv1 ph2 link" href="/index.xml" title="RSS Feed">RSS</a>
+      
+    </div>
+  </nav>
+</footer>
+
+      </div>
+    </body>
+</html>

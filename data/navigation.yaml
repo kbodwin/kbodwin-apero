@@ -1,0 +1,37 @@
+header:
+  - name: Home
+    title: home
+    url: /
+  - name: About Me
+    title: about
+    url: /about/
+  - name: Course Materials
+    title: courses
+    url: /courses/
+  - name: R Packages
+    title: packages
+    url: /software/
+  - name: Research Projects
+    title: projects
+    url: /projects/
+  - name: Blog
+    title: blog
+    url: /blog/
+  - name: Contact Form
+    title: contact
+    url: /contact/
+
+
+footer:
+  - name: Help
+    title: Visit Help Site
+    url: https://help.formspree.io
+  - name: Privacy
+    title: Privacy Policy
+    url: https://help.formspree.io
+  - name: Terms of Use
+    title: Terms and Conditions
+    url: https://help.formspree.io
+  - name: RSS
+    title: RSS Feed
+    url: /index.xml

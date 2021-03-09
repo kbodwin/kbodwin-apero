@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.80.0" />
+<title>{flair}: Decorate your source code. | Kelly Bodwin</title>
+
+
+<meta property="twitter:site" content="@kellybodwin">
+<meta property="twitter:creator" content="@kellybodwin">
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="&lt;img src=&#39;flair_hex.png&#39; style=&#39;width:200px;height:200px;&#39;&gt; ">
+
+
+<meta property="og:site_name" content="Kelly Bodwin">
+<meta property="og:title" content="{flair}: Decorate your source code. | Kelly Bodwin">
+<meta property="og:description" content="&lt;img src=&#39;flair_hex.png&#39; style=&#39;width:200px;height:200px;&#39;&gt; " />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="/talks/user_2020/" />
+<meta property="og:locale" content="en">
+
+
+
+
+    
+        <meta property="og:image" content="/talks/user_2020/flair_hex.png" >
+        <meta property="twitter:card" content="summary">
+        <meta name="twitter:image" content="/talks/user_2020/flair_hex.png" >
+    
+    
+  <meta itemprop="name" content="{flair}: Decorate your source code.">
+<meta itemprop="description" content=".remark-slide {background-size: cover;}img {height: 400px;}class: center, middle, inverse## The main idea:Source code needs highlighting in R Markdown-based presentations–
+This can be an un-reproducible task#### Hey kids, let’s learn about boxplots!ggplot(penguins, aes(x = species, y = body_mass_b)) &#43; geom_histogram() class: center">
+
+<meta itemprop="wordCount" content="813">
+
+
+
+<meta itemprop="keywords" content="" />
+
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon2.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon2.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.ec434d63ba421a81bdcb508bafa1f49101284b6fab9465aca3776362152093fe.css" integrity="sha256-7ENNY7pCGoG9y1CLr6H0kQEoS2&#43;rlGWso3djYhUgk/4=" media="screen">
+  
+  
+  
+  <link rel="stylesheet" href="/fonts.css" integrity="" media="screen">
+  
+  
+  <script src="/panelset.min.41f62c42d5f25dd80e81136866f4f1baa1bc17669edfd002e75c0e107953789b.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.07ec8e08cbb63db3a2cf7d4a7df6f7be00c715f13b64d8df6a2c48441ba8b14b.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="/" title="Home">
+      <img src="/img/bluebell.png" class="dib db-l h2 w-auto" alt="Kelly Bodwin">
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt4 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/about/" title="About">About Me</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/courses/" title="courses">Course Materials</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/software/" title="software">R Packages</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/projects/" title="projects">Research Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/blog/" title="Blog">Blog</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/form/" title="form">Contact Form</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">{flair}: Decorate your source code.</h1>
+        <h4 class="f4 mt0 mb4 lh-title measure">&lt;img src=&#39;flair_hex.png&#39; style=&#39;width:200px;height:200px;&#39;&gt; </h4>
+        <p class="f6 measure lh-copy mv1">By Kelly Bodwin</p>
+        <p class="f7 db mv0 ttu">January 1, 0001</p>
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        
+<script src="index_files/header-attrs/header-attrs.js"></script>
+<link href="index_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="index_files/anchor-sections/anchor-sections.js"></script>
+
+
+<style type="text/css">
+
+.remark-slide {
+  background-size: cover;
+}
+
+img {
+  height: 400px;
+}
+</style>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>class: center, middle, inverse</td>
+</tr>
+<tr class="even">
+<td>## The main idea:</td>
+</tr>
+</tbody>
+</table>
+<div id="source-code-needs-highlighting-in-r-markdown-based-presentations" class="section level3">
+<h3>Source code needs highlighting in R Markdown-based presentations</h3>
+<p>–</p>
+</div>
+<div id="this-can-be-an-un-reproducible-task" class="section level3">
+<h3>This can be an un-reproducible task</h3>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>#### Hey kids, let’s learn about boxplots!</td>
+</tr>
+<tr class="even">
+<td>ggplot(penguins, aes(x = species, y = body_mass_b)) +
+<mark> geom_histogram() </mark></td>
+</tr>
+<tr class="odd">
+<td><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></td>
+</tr>
+</tbody>
+</table>
+<p>class: center</p>
+</div>
+<div id="me-trying-to-highlight-my-code-examples-for-lecture" class="section level2">
+<h2>Me trying to highlight my code examples for lecture…</h2>
+<p><img src="C:/Users/kbodwin/Dropbox/Website-New/apero/static/img/talks/johanna_gif.gif" width="70%" style="display: block; margin: auto;" /></p>
+<p>class: inverse, center
+# How to add flair to your code</p>
+<p><img src="C:/Users/kbodwin/Dropbox/Website-New/apero/static/img/talks/flair_gif.gif" style="display: block; margin: auto;" /></p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td># <strong>Step One:</strong>
+## Regular ol’ code chunk (with a name)</td>
+</tr>
+<tr class="even">
+<td>````</td>
+</tr>
+<tr class="odd">
+<td>```{r how_to_pipe, include = FALSE}</td>
+</tr>
+<tr class="even">
+<td>penguins %&gt;%
+group_by(species) %&gt;%
+summarize(mean(body_mass_g))</td>
+</tr>
+<tr class="odd">
+<td>```</td>
+</tr>
+<tr class="even">
+<td>````</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="step-two" class="section level1">
+<h1><strong>Step Two:</strong></h1>
+<div id="reference-chunk-by-name-with-decorate" class="section level2">
+<h2>Reference chunk by name with <code>decorate</code></h2>
+<p><code class ='r hljs remark-code'><span style="background-color:#ffff7f">decorate</span>(“how_to_pipe”) %&gt;%</code></p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td># <strong>Step Three:</strong></td>
+</tr>
+<tr class="even">
+<td><img src="C:/Users/kbodwin/Dropbox/Website-New/apero/static/img/talks/15pieces.jpg" width="70%" style="display: block; margin: auto;" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="step-three" class="section level1">
+<h1><strong>Step Three:</strong></h1>
+<div id="add-your-flair-with-flair_-functions" class="section level2">
+<h2>Add your flair with <code>flair_*</code> functions</h2>
+<p><code class ='r hljs remark-code'>decorate(“how_to_pipe”) %&gt;%<br>  <span style="background-color:#ffff7f">flair</span>(“%&gt;%”) %&gt;%<br>  <span style="background-color:#ffff7f">flair_funs</span>(color = “cornflowerblue”)</code></p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td># You’re done!</td>
+</tr>
+<tr class="even">
+<td><code>r decorate("how_to_pipe") %&gt;% flair("%&gt;%") %&gt;% flair_funs(color = "cornflowerblue")</code></td>
+</tr>
+<tr class="odd">
+<td><code class ='r hljs remark-code'>penguins <span style="background-color:#ffff7f">%&gt;%</span><br>  <span style="color:cornflowerblue">group_by</span>(species) <span style="background-color:#ffff7f">%&gt;%</span><br>  <span style="color:cornflowerblue">summarize</span>(<span style="color:cornflowerblue">mean</span>(body_mass_g))</code></td>
+</tr>
+<tr class="even">
+<td>```</td>
+</tr>
+<tr class="odd">
+<td>## # A tibble: 3 x 2
+## species <code>mean(body_mass_g)</code>
+## <fct> <dbl>
+## 1 Adelie NA
+## 2 Chinstrap 3733.
+## 3 Gentoo NA</td>
+</tr>
+<tr class="even">
+<td>```</td>
+</tr>
+</tbody>
+</table>
+<p>class: inverse, center, middle</p>
+</div>
+</div>
+<div id="faq" class="section level1">
+<h1>FAQ</h1>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td># <strong>FAQ:</strong></td>
+</tr>
+<tr class="even">
+<td>### Does this work in <code>ioslides</code>, <code>xaringan</code>, etc?</td>
+</tr>
+</tbody>
+</table>
+<p><strong>YES!</strong> Any R-markdown based document.</p>
+<p>–</p>
+<div id="what-happens-when-you-run-in-consolermd-source" class="section level3">
+<h3>What happens when you run in console/Rmd source?</h3>
+<p>–</p>
+<p>Source code w/flair is previewed in viewer pane.</p>
+<p>–</p>
+</div>
+<div id="does-this-work-with-latex-knitting" class="section level3">
+<h3>Does this work with LaTeX knitting?</h3>
+<p>–</p>
+<p>Not yet, sorry.</p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>class: inverse, center, middle</td>
+</tr>
+<tr class="even">
+<td><img src="C:/Users/kbodwin/Dropbox/Website-New/apero/static/img/talks/favorites.jpeg" width="70%" style="display: block; margin: auto;" /></td>
+</tr>
+</tbody>
+</table>
+<p>class: center, middle, inverse</p>
+</div>
+</div>
+<div id="trick-1" class="section level1">
+<h1>Trick 1:</h1>
+</div>
+<div id="emphasize-small-code-differences" class="section level1">
+<h1>Emphasize small code differences</h1>
+<hr />
+<div id="original-code-chunk" class="section level2">
+<h2>Original code chunk</h2>
+<pre><code>```{r geoms, include=FALSE}
+babynames %&gt;%
+  ggplot(aes(x = Year, y = Count, fill = Gender)) +
+  geom_col()
+
+babynames %&gt;%
+  ggplot(aes(x = Year, y = Count, color = Gender)) +
+  geom_line()
+```</code></pre>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## flair code chunk</td>
+</tr>
+<tr class="even">
+<td><code>```{r, echo = FALSE} decorate("geoms") %&gt;% flair("_col") %&gt;% flair("fill = ") %&gt;% flair("_line") %&gt;% flair("color = ") ```</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="results" class="section level2">
+<h2>Results</h2>
+<p><code class ='r hljs remark-code'>babynames %&gt;%<br>  ggplot(aes(x = Year, y = Count, <span style="background-color:#ffff7f">fill = </span>Gender)) +<br>  geom<span style="background-color:#ffff7f">_col</span>()</code></p>
+</div>
+<div id="section" class="section level2">
+<h2><img src="index_files/figure-html/unnamed-chunk-20-1.png" width="672" /></h2>
+</div>
+<div id="results-1" class="section level2">
+<h2>Results</h2>
+<p><code class ='r hljs remark-code'>babynames %&gt;%<br>  ggplot(aes(x = Year, y = Count, <span style="background-color:#ffff7f">color = </span>Gender)) +<br>  geom<span style="background-color:#ffff7f">_line</span>()</code></p>
+<p><img src="index_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+</div>
+<div id="beautiful-slide-by-andrewheisshttpstwitter.comandrewheiss" class="section level2">
+<h2>Beautiful slide by <span class="citation">[@AndrewHeiss]</span>(<a href="https://twitter.com/andrewheiss" class="uri">https://twitter.com/andrewheiss</a>)</h2>
+<p><kbd><img src="https://pbs.twimg.com/media/EVq7NGeXgAMhvOC?format=jpg&name=large" /></kbd></p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## Flair the text:</td>
+</tr>
+<tr class="even">
+<td><code>```{r, results = "asis", echo = FALSE} "This model has a response variable, two predictors, and an interaction term." %&gt;% flair("response variable", color = "deeppink") %&gt;% flair("predictors", color = "cornflowerblue") %&gt;% flair("interaction term", color = "orange") %&gt;% flair_all(before = "&lt;h4&gt;", after = "&lt;/h4&gt;") %&gt;% cat() ```</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="flair-the-code" class="section level2">
+<h2>Flair the code:</h2>
+<pre><code>```{r lm, include = FALSE}
+mod &lt;- lm(Count ~ Gender + Year + Gender:Year, data = babynames)
+
+summary(mod)
+```</code></pre>
+<pre><code>
+```{r, echo = FALSE}
+decorate(&quot;lm&quot;) %&gt;%
+  flair(&quot;Count&quot;, color = &quot;deeppink&quot;) %&gt;%
+  flair(&quot;Gender:Year&quot;, color = &quot;orange&quot;) %&gt;%
+  flair_rx(&quot;Gender |Year &quot;, color = &quot;cornflowerblue&quot;)
+
+```</code></pre>
+<hr />
+</div>
+<div id="results-2" class="section level2">
+<h2>Results</h2>
+<h4>
+This model has a <span style="color:deeppink">response variable</span>, two <span style="color:cornflowerblue">predictors</span>, and an <span style="color:orange">interaction term</span>.
+</h4>
+<p><code class ='r hljs remark-code'>mod &lt;- lm(<span style="color:deeppink">Count</span> ~ <span style="color:cornflowerblue">Gender </span>+ <span style="color:cornflowerblue">Year </span>+ <span style="color:orange">Gender:Year</span>, data = babynames)<br><br>summary(mod)</code></p>
+<pre><code>
+## 
+## Call:
+## lm(formula = Count ~ Gender + Year + Gender:Year, data = babynames)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -625.27 -128.36  -13.67  155.13  943.86 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(&gt;|t|)
+## (Intercept)   837.0953  3555.4360   0.235    0.814
+## GenderM      2769.6513  4980.9342   0.556    0.579
+## Year           -0.1064     1.7965  -0.059    0.953
+## GenderM:Year   -1.6660     2.5171  -0.662    0.509
+## 
+## Residual standard error: 337.2 on 147 degrees of freedom
+## Multiple R-squared:  0.3876, Adjusted R-squared:  0.3751 
+## F-statistic: 31.02 on 3 and 147 DF,  p-value: 1.357e-15
+</code></pre>
+</div>
+<div id="a-class-quiz" class="section level2">
+<h2>A class quiz:</h2>
+<p><code class ='r hljs remark-code'>library(ggplot2)<br><br>babynames %&gt;%<br>  ggplot(aes(y = <span style="background-color:#ffff7f">     </span>, x = <span style="background-color:#ffff7f">    </span>, color = <span style="background-color:#ffff7f">      </span>)) +<br>  geom<span style="background-color:#ffff7f">     </span>() +<br>  geom<span style="background-color:#ffff7f">      </span>() +<br>  theme<span style="background-color:#ffff7f">      </span>()</code></p>
+<p><img src="index_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## The flair chunk:</td>
+</tr>
+<tr class="even">
+<td>`<code></code>{r, echo = FALSE}
+decorate(“plot”) %&gt;%
+flair_rx(“ggplot2?”, background = “pink”) %&gt;%
+mask(“Count”) %&gt;%
+mask(“Year”) %&gt;%
+mask(“Gender”) %&gt;%
+mask(“point”) %&gt;%
+mask(“line”) %&gt;%
+mask(“light”)</td>
+</tr>
+<tr class="odd">
+<td>```
+````</td>
+</tr>
+<tr class="even">
+<td>(Notice: <code>flair_rx()</code>)</td>
+</tr>
+</tbody>
+</table>
+<p>class: inverse, center, middle
+# Find the package:</p>
+</div>
+<div id="install.packagesflair" class="section level2">
+<h2><code>install.packages("flair")</code></h2>
+</div>
+<div id="github.comkbodwinflair" class="section level2">
+<h2><strong>github.com/kbodwin/flair</strong></h2>
+</div>
+</div>
+<div id="find-me" class="section level1">
+<h1>Find me:</h1>
+<div id="kellybodwin" class="section level2">
+<h2><strong><span class="citation">@KellyBodwin</span></strong></h2>
+</div>
+<div id="www.kelly-bodwin.com" class="section level2">
+<h2>www.kelly-bodwin.com</h2>
+</div>
+</div>
+<div id="how-flair-works" class="section level1">
+<h1>How <code>flair</code> works</h1>
+<div id="with_flair-object" class="section level2">
+<h2><code>with_flair()</code> object</h2>
+<ul>
+<li><p><code>decorate()</code> creates a <code>with_flair()</code> object</p></li>
+<li><p><code>with_flair()</code> is a new S3 class for the package.</p>
+<ul>
+<li>structure: list, output of <code>knit_child()</code></li>
+<li><code>print</code> method: prints as-is</li>
+</ul></li>
+</ul>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td># How <code>flair</code> works
+## <code>decorate()</code></td>
+</tr>
+<tr class="even">
+<td>The <code>decorate()</code> function…</td>
+</tr>
+<tr class="odd">
+<td>* tracks the current state of R Markdown (i.e. knitting versus interactive)</td>
+</tr>
+<tr class="even">
+<td>* tracks global options and chunk-specific options</td>
+</tr>
+<tr class="odd">
+<td>* does a lot of regex searching to find <code>flair</code> chunks</td>
+</tr>
+<tr class="even">
+<td>* knits the <code>flair</code> chunks individually, using appropriate options</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="how-flair-works-1" class="section level1">
+<h1>How <code>flair</code> works</h1>
+<div id="flair" class="section level2">
+<h2><code>flair()</code></h2>
+<p>The <code>flair()</code> functions…</p>
+<ul>
+<li><p>Find the source code elements in the <code>with_flair()</code> object.</p></li>
+<li><p>Wrap html tags around the appropriate text.</p></li>
+<li><p>Return a <code>with_flair()</code> object.</p></li>
+</ul>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td># How <code>flair</code> works
+## The whole routine</td>
+</tr>
+<tr class="even">
+<td>1. Pre-knit the “child” chunks into html.</td>
+</tr>
+<tr class="odd">
+<td>2. Find flair-ed text and wrap html.</td>
+</tr>
+<tr class="even">
+<td>3. Print as-is.</td>
+</tr>
+</tbody>
+</table>
+<p>class: center, middle, inverse</p>
+</div>
+</div>
+<div id="how-you-can-help" class="section level1">
+<h1>How you can help</h1>
+<p>–</p>
+<div id="syntax-highlighting" class="section level2">
+<h2>Syntax highlighting!</h2>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td># Syntax highlighting</td>
+</tr>
+<tr class="even">
+<td>Ordinary knitting process:</td>
+</tr>
+<tr class="odd">
+<td>* R markdown/knitr runs code; stores source text and output in list.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Pandoc process markdown and “fences” source code:</li>
+</ul>
+<pre><code>```r
+
+```</code></pre>
+<p>–</p>
+<ul>
+<li>JavaScript <code>highlight.js</code> processes source text to add syntax highlighting.</li>
+</ul>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td># Syntax highlighting</td>
+</tr>
+<tr class="even">
+<td><strong>What this means:</strong> Syntax highlighting happens <em>on the browser end</em>.</td>
+</tr>
+</tbody>
+</table>
+<p>Flair happens at the <strong>knitting step</strong>.</p>
+<p>–</p>
+<p>Can we somehow apply both to the source code?</p>
+<p>–</p>
+<p><img src="C:/Users/kbodwin/Dropbox/Website-New/apero/static/img/talks/idk.gif" width="70%" style="display: block; margin: auto;" /></p>
+<hr />
+<p>class: center, middle, inverse
+# Find the package:</p>
+</div>
+<div id="install.packagesflair-1" class="section level2">
+<h2><code>install.packages("flair")</code></h2>
+</div>
+<div id="github.comkbodwinflair-1" class="section level2">
+<h2><strong>github.com/kbodwin/flair</strong></h2>
+</div>
+</div>
+<div id="find-me-1" class="section level1">
+<h1>Find me:</h1>
+<div id="kellybodwin-1" class="section level2">
+<h2><strong><span class="citation">@KellyBodwin</span></strong></h2>
+</div>
+<div id="www.kelly-bodwin.com-1" class="section level2">
+<h2>www.kelly-bodwin.com</h2>
+</div>
+</div>
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">January 1, 0001</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">4 minute read, 813 words</dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="/talks/rs2020/rstudio_2020_lightning/">R tools for teaching and presentation &rarr;</a>
+  
+</div>
+
+      </footer>
+    </article>
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2021 Kelly Bodwin, San Luis Opispo, CA
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+      
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.instagram.com/kellbod" target="_blank" rel="noopener">
+      <i class="fab fa-instagram fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://twitter.com/kellybodwin" target="_blank" rel="noopener">
+      <i class="fab fa-twitter fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/kbodwin" target="_blank" rel="noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="/blog/index.xml" >
+      <i class="fas fa-rss fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+      
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="https://help.formspree.io" title="Visit Help Site">Help</a>
+      
+      <a class="dib pv1 ph2 link" href="https://help.formspree.io" title="Privacy Policy">Privacy</a>
+      
+      <a class="dib pv1 ph2 link" href="https://help.formspree.io" title="Terms and Conditions">Terms of Use</a>
+      
+      <a class="dib pv1 ph2 link" href="/index.xml" title="RSS Feed">RSS</a>
+      
+    </div>
+  </nav>
+</footer>
+
+      </div>
+    </body>
+</html>
