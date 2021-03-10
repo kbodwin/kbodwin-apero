@@ -1,70 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Talks that Last on Kelly Bodwin</title>
-    <link>/talks/</link>
-    <description>Recent content in Talks that Last on Kelly Bodwin</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/talks/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>A campfire</title>
-      <link>/talks/campfire/</link>
-      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/talks/campfire/</guid>
-      <description>I&amp;rsquo;m really excited to give this talk! Stay tuned for video and slides.</description>
-    </item>
-    
-    <item>
-      <title>A seedling</title>
-      <link>/talks/second-seedling/</link>
-      <pubDate>Fri, 01 Jan 2021 14:15:59 -0600</pubDate>
-      
-      <guid>/talks/second-seedling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A seedling</title>
-      <link>/talks/seedling/</link>
-      <pubDate>Mon, 13 Jan 2020 14:15:59 -0600</pubDate>
-      
-      <guid>/talks/seedling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>	Inside-Out Statistics</title>
-      <link>/talks/jsm2020/jsm_2020/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/talks/jsm2020/jsm_2020/</guid>
-      <description>title: &#34; Inside-Out Statistics&#34;subtitle: ‘Teaching Evidence-Based Reasoning’author: “Kelly Bodwin”output:xaringan::moon_reader:css: xaringan-themer.csslib_dir: libsnature:countIncrementalSlides: nohighlightLines: yeshighlightStyle: githubinstitute: ‘These slides: kbod.win/talks/jsm2020’img {height: 400px;}.remark-code {font-size: 30px;}.remark-slide {background-size: cover;}The Question:In 1952, a group of scientists decided to study the effect of Vitamin C supplementson tooth growth.</description>
-    </item>
-    
-    <item>
-      <title>R tools for teaching and presentation</title>
-      <link>/talks/rs2020/rstudio_2020_lightning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/talks/rs2020/rstudio_2020_lightning/</guid>
-      <description>img {height: 400px;}.remark-code {font-size: 30px;}.remark-slide {background-size: cover;}class: center, middle# Thesis:
-Some things are hard (especially for teachers).
-–
-Let’s use R to make them easier.class: inverse, center, middle
-Hard for very basic R users:Making a simple Shiny appclass: center,middleclass: inverse# Our idea:## Wrappers to simplify Shiny</description>
-    </item>
-    
-    <item>
-      <title>{flair}: Decorate your source code.</title>
-      <link>/talks/user_2020/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/talks/user_2020/</guid>
-      <description>.remark-slide {background-size: cover;}img {height: 400px;}class: center, middle, inverse## The main idea:Source code needs highlighting in R Markdown-based presentations–
-This can be an un-reproducible task#### Hey kids, let’s learn about boxplots!ggplot(penguins, aes(x = species, y = body_mass_b)) + geom_histogram() class: center</description>
-    </item>
-    
-  </channel>
-</rss>

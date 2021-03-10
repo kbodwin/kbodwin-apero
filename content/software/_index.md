@@ -1,9 +1,8 @@
 ---
 title: R Packages
-description: "Open-source software development projects."
-author: "Kelly Bodwin"
+description: "Here are some of my open-source software development projects. My two areas of focus currently are meta-packages to help educators produce R content, and implementation of complex association mining methods."
 show_post_thumbnail: true
-show_author_byline: true
+show_author_byline: false
 show_post_date: false
 # for listing page layout
 layout: list-grid # list, list-sidebar, list-grid

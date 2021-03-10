@@ -2,9 +2,8 @@
 title: Public Learning Materials
 description: |
   Here you will find links to public-facing websites and GitHub repositories for my courses and workshops.  I am always happy to share non-public materials, such as exams and assignment solutions, with fellow educators.
-author: "Kelly Bodwin"
 show_post_thumbnail: true
-show_author_byline: true
+show_author_byline: false
 show_post_date: true
 show_post_time: true
 # for listing page layout

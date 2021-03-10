@@ -8,20 +8,18 @@
     <language>en</language>
     <lastBuildDate>Mon, 18 Feb 2019 12:27:33 -0600</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Working with SQL using {dbplyr}.</title>
-      <link>/blog/sql-series/02-sql/</link>
+      <title>2020 Student Projects</title>
+      <link>/blog/student-projects-series/01-student-projects/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/sql-series/02-sql/</guid>
-      <description>Making a database on AmazonStep 1: Create an AWS account. I did it a long time ago, it&amp;rsquo;s pretty straightforward, I&amp;rsquo;m not going to re-do it here for no reason.
-Step 2: Follow Items 1-5 only in this tutorial to create a databaset instance.
-Step 3: Make sure you choose the free tier! Select whatever username and password you want - but it&amp;rsquo;s a pain in the butt to add additional users, so if security is not a huge concern and you want your database to be broadly accessible, choose a username and password that you&amp;rsquo;re willing to share.</description>
+      <guid>/blog/student-projects-series/01-student-projects/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Setting up a SQL database with AWS.</title>
       <link>/blog/sql-series/01-sql/</link>
-      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>/blog/sql-series/01-sql/</guid>
       <description>Making a database on AmazonStep 1: Create an AWS account. I did it a long time ago, it&amp;rsquo;s pretty straightforward, I&amp;rsquo;m not going to re-do it here for no reason.
@@ -59,6 +57,24 @@ https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/ma
       <guid>/collection/prework/</guid>
       <description>Welcome to the Introducing Yourself Online workshop! We look forward to meeting you. Before attending the workshop, please complete the following prework.
 Set up RStudio CloudSign up for a free RStudio Cloud account at https://rstudio.cloud/ before the workshop. I recommend logging in with an existing Google or GitHub account, if you have one (rather than creating a new account with another password you have to remember).</description>
+    </item>
+    
+    <item>
+      <title>Course Material Creation in the R Ecosystem  (RStudio::conf 2020 talk) </title>
+      <link>/blog/talks-series/rstudio-conf-2020/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/talks-series/rstudio-conf-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introductory Statistics with R  (RStudio::conf 2019 talk) </title>
+      <link>/blog/talks-series/rstudio-conf-2019/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/talks-series/rstudio-conf-2019/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -106,6 +122,15 @@ My content section is:collectionMy layout is:single-series part 2!doe
     </item>
     
     <item>
+      <title>Differential Correlation Mining</title>
+      <link>/projects/dcm/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/dcm/</guid>
+      <description>DCM and stuff</description>
+    </item>
+    
+    <item>
       <title>flair</title>
       <link>/software/flair/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
@@ -115,6 +140,15 @@ My content section is:collectionMy layout is:single-series part 2!doe
 iris %&amp;gt;%
 group_by(Species) %&amp;gt;%
 summarize(mean(Sepal.Length))#&amp;gt; # A tibble: 3 x 2#&amp;gt; Species `mean(Sepal.Length)`#&amp;gt; &amp;lt;fct&amp;gt; &amp;lt;dbl&amp;gt;#&amp;gt; 1 setosa 5.</description>
+    </item>
+    
+    <item>
+      <title>Latent Association Mining in Binary Data</title>
+      <link>/projects/lamb/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/lamb/</guid>
+      <description>DCM and stuff</description>
     </item>
     
     <item>
@@ -184,35 +218,7 @@ The goal is to create a set of templates for course material sets, such as the s
     </item>
     
     <item>
-      <title>Tachyons for Style</title>
-      <link>/projects/giraffes/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/giraffes/</guid>
-      <description>Tachyons is a design system that allows you to design gorgeous interfaces in the browser with little effort. Because SpeedBuilding this static site generator theme was the first time I used an Atomic (or Functional) CSS system like Tachyons. It&amp;rsquo;s a design system that provides very small (which means fast) CSS modules that you can use in your HTML. So, rather than writing every line of CSS, you apply the style you need as you write your HTML with easy to understand shorthand class names.</description>
-    </item>
-    
-    <item>
-      <title>Palmer Penguins</title>
-      <link>/projects/penguins/</link>
-      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/penguins/</guid>
-      <description>“Grid is the very first CSS module created specifically to solve the layout problems we&amp;rsquo;ve all been hacking our way around for as long as we&amp;rsquo;ve been making websites.”— Chris House, A Complete Guide to CSS Grid Layout 1
- Since I began building websites in Y2K, I&amp;rsquo;ve lost count how many times the phrase &amp;ldquo;&amp;hellip;there&amp;rsquo;s got to be a better way to do this&amp;rdquo; has passed my lips.</description>
-    </item>
-    
-    <item>
-      <title>Bakeoff</title>
-      <link>/projects/bakeoff/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/bakeoff/</guid>
-      <description>Formspree makes it easy to receive submissions from HTML forms on your static website. Functional FormThis theme has a form-to-email feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the front matter of the form (/content/forms/contact.md). Of course, the example shown below (your@email.here) must not be used.</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
+      <title>Questions and Inquiries</title>
       <link>/contact/</link>
       <pubDate>Mon, 25 Feb 2019 13:38:41 -0600</pubDate>
       
@@ -235,6 +241,26 @@ The goal is to create a set of templates for course material sets, such as the s
 (20px)1rem
 (16px).875rem
 (14px)Type SamplesHead&amp;shy;lineSub&amp;shy;head&amp;shy;lineLevel 1 HeadingOne page to rule them all...well, not really. This page displays sample typography and page elements to illustrate their style. Things like headings and paragraphs showing the beautiful type scale, form elements, tabular data, and image layouts just to name a few.</description>
+    </item>
+    
+    <item>
+      <title>Tidy Eval is Confusing Sometimes</title>
+      <link>/blog/tidyeval/</link>
+      <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/tidyeval/</guid>
+      <description>ggplot2ggplot2::
+1 2  library(tidyverse) library(rlang)   IntroductionThe purpose of this document is to once and for all figure out how to use tidy eval in my functions. I keep thinking I understand it, and then messing up the next time. The last time I wrote decent working complex tidy eval code, I had Joe Motherflipping Cheng coaching me&amp;hellip; can&amp;rsquo;t count on that every time. Let&amp;rsquo;s figure this ish out.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>My BackgroundI have been at Cal Poly since 2017, where I teach R programming, Data Science, and introductory statistics. I also help run the San Luis Obispo area R Meetup Group.
+I grew up in Cupertino, California in a family full of computer scientists. My undergraduate degree is from Harvard University, where I earned a B.A. in Statistics with minor degrees in English and French. I wrote my senior thesis under the mentorship of the incomparable Professor Joe Blitzstein.</description>
     </item>
     
     <item>

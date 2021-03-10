@@ -4,7 +4,7 @@ subtitle: "A guide based on my first experience."
 excerpt: "I am not a regular SQL user, but it can be useful to have larger datasets stored on a database for ease of sharing.  In this post, I walk through setting up your own AWS database and connecting to it from R."
 weight: 1
 author: "Kelly Bodwin"
-date: '2021-01-27'
+date: '2021-03-09'
 draft: false
 # layout options: single, single-sidebar
 categories:

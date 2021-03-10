@@ -4,7 +4,7 @@ subtitle: "A guide based on my first experience."
 excerpt: "I am not a regular SQL user, but it can be useful to have larger datasets stored on a database for ease of sharing.  In this post, I walk through using the dbplyr package to access data from a database."
 weight: 1
 author: "Kelly Bodwin"
-date: '2021-03-09'
+date: '2027-03-09'
 draft: true
 # layout options: single, single-sidebar
 categories:

@@ -38,7 +38,7 @@ enableEmoji = true
   favicon = "/img/favicon2.ico"
   logo = "/img/bluebell.png"
    # select sections to highlight on about page
-  mainSections = ["software", "courses", "projects"]
+  mainSections = []
   show_social_links = true
   navallcaps = true
   # Default image for social sharing and search engines. 
@@ -86,11 +86,6 @@ enableEmoji = true
   tag = "tags"
   
 [menu]
-  [[menu.header]]
-    name = "About Me"
-    title = "About"
-    url = "/about/"
-    weight = 1
   [[menu.header]]
     name = "Course Materials"
     title = "courses"

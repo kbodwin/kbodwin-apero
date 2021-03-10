@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/r4edu/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Differential Correlation Mining</title>
+      <link>/projects/dcm/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/dcm/</guid>
+      <description>DCM and stuff</description>
+    </item>
+    
+    <item>
       <title>flair</title>
       <link>/software/flair/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
@@ -17,6 +26,15 @@
 iris %&amp;gt;%
 group_by(Species) %&amp;gt;%
 summarize(mean(Sepal.Length))#&amp;gt; # A tibble: 3 x 2#&amp;gt; Species `mean(Sepal.Length)`#&amp;gt; &amp;lt;fct&amp;gt; &amp;lt;dbl&amp;gt;#&amp;gt; 1 setosa 5.</description>
+    </item>
+    
+    <item>
+      <title>Latent Association Mining in Binary Data</title>
+      <link>/projects/lamb/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/lamb/</guid>
+      <description>DCM and stuff</description>
     </item>
     
     <item>

@@ -98,11 +98,29 @@
     </item>
     
     <item>
-      <title>Theme Features</title>
-      <link>/categories/theme-features/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <title>education</title>
+      <link>/categories/education/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/theme-features/</guid>
+      <guid>/categories/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>talks</title>
+      <link>/categories/talks/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>student projects</title>
+      <link>/categories/student-projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/student-projects/</guid>
       <description></description>
     </item>
     

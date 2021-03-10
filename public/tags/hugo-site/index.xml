@@ -8,25 +8,32 @@
     <language>en</language>
     <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/hugo-site/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Working with SQL using {dbplyr}.</title>
-      <link>/blog/sql-series/02-sql/</link>
+      <title>Setting up a SQL database with AWS.</title>
+      <link>/blog/sql-series/01-sql/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/sql-series/02-sql/</guid>
+      <guid>/blog/sql-series/01-sql/</guid>
       <description>Making a database on AmazonStep 1: Create an AWS account. I did it a long time ago, it&amp;rsquo;s pretty straightforward, I&amp;rsquo;m not going to re-do it here for no reason.
 Step 2: Follow Items 1-5 only in this tutorial to create a databaset instance.
 Step 3: Make sure you choose the free tier! Select whatever username and password you want - but it&amp;rsquo;s a pain in the butt to add additional users, so if security is not a huge concern and you want your database to be broadly accessible, choose a username and password that you&amp;rsquo;re willing to share.</description>
     </item>
     
     <item>
-      <title>Setting up a SQL database with AWS.</title>
-      <link>/blog/sql-series/01-sql/</link>
-      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      <title>Course Material Creation in the R Ecosystem  (RStudio::conf 2020 talk) </title>
+      <link>/blog/talks-series/rstudio-conf-2020/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/sql-series/01-sql/</guid>
-      <description>Making a database on AmazonStep 1: Create an AWS account. I did it a long time ago, it&amp;rsquo;s pretty straightforward, I&amp;rsquo;m not going to re-do it here for no reason.
-Step 2: Follow Items 1-5 only in this tutorial to create a databaset instance.
-Step 3: Make sure you choose the free tier! Select whatever username and password you want - but it&amp;rsquo;s a pain in the butt to add additional users, so if security is not a huge concern and you want your database to be broadly accessible, choose a username and password that you&amp;rsquo;re willing to share.</description>
+      <guid>/blog/talks-series/rstudio-conf-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introductory Statistics with R  (RStudio::conf 2019 talk) </title>
+      <link>/blog/talks-series/rstudio-conf-2019/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/talks-series/rstudio-conf-2019/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -39,31 +46,12 @@ Step 3: Make sure you choose the free tier! Select whatever username and passwor
     </item>
     
     <item>
-      <title>Tachyons for Style</title>
-      <link>/projects/giraffes/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Talks and Presentations</title>
+      <link>/blog/talks-series/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/projects/giraffes/</guid>
-      <description>Tachyons is a design system that allows you to design gorgeous interfaces in the browser with little effort. Because SpeedBuilding this static site generator theme was the first time I used an Atomic (or Functional) CSS system like Tachyons. It&amp;rsquo;s a design system that provides very small (which means fast) CSS modules that you can use in your HTML. So, rather than writing every line of CSS, you apply the style you need as you write your HTML with easy to understand shorthand class names.</description>
-    </item>
-    
-    <item>
-      <title>Palmer Penguins</title>
-      <link>/projects/penguins/</link>
-      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/penguins/</guid>
-      <description>“Grid is the very first CSS module created specifically to solve the layout problems we&amp;rsquo;ve all been hacking our way around for as long as we&amp;rsquo;ve been making websites.”— Chris House, A Complete Guide to CSS Grid Layout 1
- Since I began building websites in Y2K, I&amp;rsquo;ve lost count how many times the phrase &amp;ldquo;&amp;hellip;there&amp;rsquo;s got to be a better way to do this&amp;rdquo; has passed my lips.</description>
-    </item>
-    
-    <item>
-      <title>Bakeoff</title>
-      <link>/projects/bakeoff/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/bakeoff/</guid>
-      <description>Formspree makes it easy to receive submissions from HTML forms on your static website. Functional FormThis theme has a form-to-email feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the front matter of the form (/content/forms/contact.md). Of course, the example shown below (your@email.here) must not be used.</description>
+      <guid>/blog/talks-series/</guid>
+      <description>** No content below YAML for the series _index. This file is a leaf bundle, and provides settings for the listing page layout and sidebar content.**</description>
     </item>
     
   </channel>

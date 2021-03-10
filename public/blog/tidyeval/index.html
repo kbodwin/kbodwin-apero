@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.80.0" />
+<title>Tidy Eval is Confusing Sometimes | Kelly Bodwin</title>
+
+
+<meta property="twitter:site" content="@kellybodwin">
+<meta property="twitter:creator" content="@kellybodwin">
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="An experiment">
+
+
+<meta property="og:site_name" content="Kelly Bodwin">
+<meta property="og:title" content="Tidy Eval is Confusing Sometimes | Kelly Bodwin">
+<meta property="og:description" content="An experiment" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="/blog/tidyeval/" />
+<meta property="og:locale" content="en">
+
+
+
+
+    
+        <meta property="og:image" content="/blog/tidyeval/featured.jpeg" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="/blog/tidyeval/featured.jpeg" >
+    
+    
+  <meta itemprop="name" content="Tidy Eval is Confusing Sometimes">
+<meta itemprop="description" content="ggplot2ggplot2::
+1 2  library(tidyverse) library(rlang)   IntroductionThe purpose of this document is to once and for all figure out how to use tidy eval in my functions. I keep thinking I understand it, and then messing up the next time. The last time I wrote decent working complex tidy eval code, I had Joe Motherflipping Cheng coaching me&hellip; can&rsquo;t count on that every time. Let&rsquo;s figure this ish out.">
+<meta itemprop="datePublished" content="2010-07-01T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2010-07-01T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1533">
+<meta itemprop="image" content="/blog/tidyeval/featured.jpeg">
+
+
+
+<meta itemprop="keywords" content="" />
+
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon2.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon2.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.0eec23c6024d344a3d2182f1573204e0471b860e71d48488067ad7ac9062c299.css" integrity="sha256-DuwjxgJNNEo9IYLxVzIE4Ecbhg5x1ISIBnrXrJBiwpk=" media="screen">
+  
+  
+  
+  <link rel="stylesheet" href="/fonts.css" integrity="" media="screen">
+  
+  
+  <script src="/panelset.min.41f62c42d5f25dd80e81136866f4f1baa1bc17669edfd002e75c0e107953789b.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.07ec8e08cbb63db3a2cf7d4a7df6f7be00c715f13b64d8df6a2c48441ba8b14b.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container single">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="/" title="Home">
+      <img src="/img/bluebell.png" class="dib db-l h2 w-auto" alt="Kelly Bodwin">
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt4 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/courses/" title="courses">Course Materials</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/software/" title="software">R Packages</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/projects/" title="projects">Research Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/blog/" title="Blog">Blog</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/consulting/" title="Consulting">Consulting</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/contact/" title="Contact">Contact</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Tidy Eval is Confusing Sometimes</h1>
+        <h4 class="f4 mt0 mb4 lh-title measure">An experiment</h4>
+        <p class="f6 measure lh-copy mv1">By Kelly Bodwin in <a href="/categories/r">R</a>  <a href="/categories/random">random</a> </p>
+        <p class="f7 db mv0 ttu">July 1, 2010</p>
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        <p>ggplot2ggplot2::</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#900;font-weight:bold">library</span>(tidyverse)
+<span style="color:#900;font-weight:bold">library</span>(rlang)
+</code></pre></td></tr></table>
+</div>
+</div>
+
+
+
+<h1 id="introduction">Introduction
+  <a href="#introduction"></a>
+</h1>
+<p>The purpose of this document is to once and for all figure out how to use tidy eval in my functions.  I keep thinking I understand it, and then messing up the next time.  The last time I wrote decent working complex tidy eval code, I had Joe Motherflipping Cheng coaching me&hellip; can&rsquo;t count on that every time.  Let&rsquo;s figure this ish out.</p>
+<p>I am hoping <code>curly-curly</code> or <code>doublestache</code> or whatever we are calling <code>{{</code> is going to help it finally click.</p>
+
+
+
+
+<h1 id="in-which-i-do-it-wrong">In which I do it wrong
+  <a href="#in-which-i-do-it-wrong"></a>
+</h1>
+<p>Every time I try to write a function with tidy eval, I do something like this:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">mean_by <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">function</span>(.data, group_var){
+  
+  .data <span style="color:#000;font-weight:bold">%&gt;%</span> 
+    <span style="color:#900;font-weight:bold">group_by</span>(<span style="color:#900;font-weight:bold">sym</span>(group_var)) <span style="color:#000;font-weight:bold">%&gt;%</span>
+    <span style="color:#900;font-weight:bold">summarize_all</span>(mean)
+  
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>The correct code instead should be:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">mean_by <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">function</span>(.data, group_var){
+  
+  .data <span style="color:#000;font-weight:bold">%&gt;%</span> 
+    <span style="color:#900;font-weight:bold">group_by</span>(<span style="color:#000;font-weight:bold">!!</span><span style="color:#900;font-weight:bold">enquo</span>(group_var)) <span style="color:#000;font-weight:bold">%&gt;%</span>
+    <span style="color:#900;font-weight:bold">summarize_all</span>(mean)
+  
+}
+</code></pre></td></tr></table>
+</div>
+</div><p><code>!!enquo</code> instead of <code>sym</code>.  This was easy to Google and fix.  But why wasn&rsquo;t it my instinct?  More on that in a second.</p>
+
+
+
+
+<h2 id="doublestache-to-the-rescue">Doublestache to the rescue
+  <a href="#doublestache-to-the-rescue"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">mean_by <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">function</span>(.data, group_var){
+  
+  .data <span style="color:#000;font-weight:bold">%&gt;%</span> 
+    <span style="color:#900;font-weight:bold">group_by</span>({{group_var}}) <span style="color:#000;font-weight:bold">%&gt;%</span>
+    <span style="color:#900;font-weight:bold">summarize_all</span>(mean)
+  
+}
+
+<span style="color:#900;font-weight:bold">mean_by</span>(iris, Species)
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## # A tibble: 3 x 5
+##   Species    Sepal.Length Sepal.Width Petal.Length Petal.Width
+## * &lt;fct&gt;             &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt;
+## 1 setosa             5.01        3.43         1.46       0.246
+## 2 versicolor         5.94        2.77         4.26       1.33 
+## 3 virginica          6.59        2.97         5.55       2.03
+</code></pre><p>Hooray!!!  Okay, this is much easier to remember.  Problem mostly solved.  Also I officially now support the name <code>doublestache</code> over <code>curly-curly</code> because it makes me laugh.</p>
+<p><img src="https://external-preview.redd.it/-ZmAri-tn-Vtan3PCx6FzuFFuCJFUWXcbdNimW4e_vc.jpg?width=800&amp;auto=webp&amp;s=60fb6d5b42f43a259044939822402e1228c180e0" alt=""></p>
+
+
+
+
+<h2 id="tidy-eval-is-still-hard">Tidy eval is still hard.
+  <a href="#tidy-eval-is-still-hard"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Alright, so doublestache is gonna do the trick most of the time, but I still want to understand what&rsquo;s going on here and why this feels unnatural.</p>
+
+
+
+
+<h3 id="object-types">Object types
+  <a href="#object-types"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>I think my main confusion is to do with what object types exist in NSE and where they appear.</p>
+<p>Here is my naive, non-programmer, non-developer thought process on the types.</p>
+
+
+
+
+<h4 id="strings">strings:
+  <a href="#strings"></a>
+</h4>
+<p>Strings make sense to me.  Storing code as a string makes sense to me.</p>
+<ul>
+<li>
+<p>Variable names are passable as strings to <code>[[</code> and certain functions.  This feels clunky and inelegant to me, because a string is a string, not a name of an object in the environment/dataset.</p>
+</li>
+<li>
+<p>Code can be passed as a string and then parsed.  But <code>eval(parse())</code> is what sent me down this rabbit hole in the first place.  To be avoided.</p>
+</li>
+</ul>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">thing <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#d14">&#34;Sepal.Length&#34;</span>
+<span style="color:#900;font-weight:bold">mean</span>(iris[[thing]])
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## [1] 5.843333
+</code></pre><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">thing <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#d14">&#34;mean(iris$Sepal.Length)&#34;</span>
+<span style="color:#900;font-weight:bold">eval</span>(<span style="color:#900;font-weight:bold">parse</span>(text <span style="color:#000;font-weight:bold">=</span> thing))
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## [1] 5.843333
+</code></pre>
+
+
+
+<h3 id="expressions">expressions:
+  <a href="#expressions"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>I can also wrap my head around an expression as an object type.  This is just the result of <code>parse()</code>-ing a string.  No problemo.  I like that <code>expr</code> lets you create these directly.</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">thing <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">expr</span>(<span style="color:#900;font-weight:bold">mean</span>(iris<span style="color:#000;font-weight:bold">$</span>Sepal.Length))
+<span style="color:#900;font-weight:bold">eval</span>(thing)
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## [1] 5.843333
+</code></pre>
+
+
+
+<h4 id="symbols">symbols:
+  <a href="#symbols"></a>
+</h4>
+<p>To me, it feels like the next logical &ldquo;meta&rdquo; object type we might need would be the names of objects in an environment or list, so we can reference them dynamically.</p>
+<p>My brain wants this to be what <code>symbol</code> means, but that is wrong.</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#998;font-style:italic"># I really want this to work :(</span>
+
+thing <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">sym</span>(<span style="color:#d14">&#34;Sepal.Length&#34;</span>)
+
+<span style="color:#900;font-weight:bold">mean</span>(iris<span style="color:#000;font-weight:bold">$</span>thing)
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## Warning in mean.default(iris$thing): argument is not numeric or logical:
+## returning NA
+</code></pre><pre><code>## [1] NA
+</code></pre><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">iris <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">summarize</span>(<span style="color:#900;font-weight:bold">mean</span>(thing))
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## Warning in mean.default(thing): argument is not numeric or logical: returning NA
+</code></pre><pre><code>##   mean(thing)
+## 1          NA
+</code></pre><p>Incidentally - and I did not expect this - they are both warnings rather than errors.</p>
+
+
+
+
+<h5 id="code-sanitizing">Code sanitizing.
+  <a href="#code-sanitizing"></a>
+</h5>
+<p>I do like <code>sym()</code> as a way of sanitizing input code.</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">thing <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#d14">&#34;rm(list = ls())&#34;</span>
+
+<span style="color:#900;font-weight:bold">sym</span>(thing)
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## `rm(list = ls())`
+</code></pre><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#998;font-style:italic"># Nice try, hacker!  Taste my backticks!!!</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>But surely this is not it&rsquo;s only purpose?</p>
+<p>And also the backticks make me think, again, of variable or object names&hellip; which is not what a symbol is, or at least, not directly.</p>
+<p>So&hellip;. what exactly is the purpose of a symbol?</p>
+
+
+
+
+<h2 id="bang-bang">Bang-Bang
+  <a href="#bang-bang"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>So I think to myself, okay, this makes sense.  We don&rsquo;t want to <code>mean</code> the symbol, we want the thing the symbol refers to.</p>
+<p>This seems to be bang-bang&rsquo;s job:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">thing <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">sym</span>(<span style="color:#d14">&#34;Sepal.Length&#34;</span>)
+iris <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">summarize</span>(<span style="color:#900;font-weight:bold">mean</span>(<span style="color:#000;font-weight:bold">!!</span>thing))
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>##   mean(Sepal.Length)
+## 1           5.843333
+</code></pre><p>Great!  That worked!</p>
+
+
+
+
+<h3 id="important-maybe--bangbang-stalls-evaluation">Important (maybe):  BangBang stalls evaluation!!!
+  <a href="#important-maybe--bangbang-stalls-evaluation"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Instinctively, all we are doing is evaluating an expression/symbol.  But we are saving the moment of evaluation until the parent function needs it.</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">my_sym <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">sym</span>(<span style="color:#d14">&#34;Sepal.Length&#34;</span>)
+
+<span style="color:#998;font-style:italic"># It&#39;s mad because it can&#39;t find Sepal.Length</span>
+iris <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">select</span>(<span style="color:#900;font-weight:bold">eval</span>(my_sym)) <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">head</span>()
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## Error: object 'Sepal.Length' not found
+</code></pre><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#998;font-style:italic"># It&#39;s happy because it doesn&#39;t look for Sepal.Length until select says so</span>
+iris <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">select</span>(<span style="color:#000;font-weight:bold">!!</span>my_sym) <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">head</span>()
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>##   Sepal.Length
+## 1          5.1
+## 2          4.9
+## 3          4.7
+## 4          4.6
+## 5          5.0
+## 6          5.4
+</code></pre><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#998;font-style:italic"># This is fine for some reason?</span>
+iris <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">summarize</span>(<span style="color:#900;font-weight:bold">mean</span>(<span style="color:#900;font-weight:bold">eval</span>(my_sym)))
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>##   mean(eval(my_sym))
+## 1           5.843333
+</code></pre>
+
+
+
+<h2 id="quosures">Quosures
+  <a href="#quosures"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Uhhh but what about quosures???  If I can get quosures I think I can get the whole shebang.</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">my_str <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#d14">&#34;Sepal.Length&#34;</span>
+<span style="color:#900;font-weight:bold">typeof</span>(my_str)
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## [1] &quot;character&quot;
+</code></pre><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">my_sym <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">sym</span>(my_str)
+<span style="color:#900;font-weight:bold">typeof</span>(my_sym)
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## [1] &quot;symbol&quot;
+</code></pre><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#998;font-style:italic"># so far so good...</span>
+
+thing <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">quo</span>(my_sym)
+<span style="color:#900;font-weight:bold">typeof</span>(thing)
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## [1] &quot;language&quot;
+</code></pre><p>Okay.  The object type is &ldquo;language&rdquo;.  To me this says &ldquo;here&rsquo;s some code&rdquo;.  But that was already how I understood expressions.</p>
+<p>What&rsquo;s it look like?</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">thing
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## &lt;quosure&gt;
+## expr: ^my_sym
+## env:  global
+</code></pre><p>It&rsquo;s a <code>quosure</code>&hellip; but that&rsquo;s not it&rsquo;s object type&hellip; and it has an <code>expr</code> and a <code>env</code>.  These are clearly not variables&hellip;</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">thing<span style="color:#000;font-weight:bold">$</span>expr  <span style="color:#998;font-style:italic">#nope</span>
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## NULL
+</code></pre><p>&hellip; so what are they?  Attributes?</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#900;font-weight:bold">attributes</span>(thing)
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## $class
+## [1] &quot;quosure&quot; &quot;formula&quot;
+## 
+## $.Environment
+## &lt;environment: R_GlobalEnv&gt;
+</code></pre><p>Gah, okay.  <code>thing</code> is a formula.  I can deal with that.  And it&rsquo;s a special formula that is also a quosure.  Getting warmer.</p>
+<p><em>[Author&rsquo;s note:  At this point I tried to read the source code for <code>aov()</code> and <code>lm()</code> to understand how formulas get processed.  Then I got stressed out, ate an entire bag of popcorn, read <em>Advanced R</em> for a bit, and decided to work on formulas some other time]</em></p>
+<p>Alright.  A quosure is technically a formula.  Whatever.  That&rsquo;s fine.</p>
+<p>Now, what needs to happen to &ldquo;activate&rdquo; a quosure.</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000;font-weight:bold">!!</span>thing
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## Error: Quosures can only be unquoted within a quasiquotation context.
+## 
+##   # Bad:
+##   list(!!myquosure)
+## 
+##   # Good:
+##   dplyr::mutate(data, !!myquosure)
+</code></pre><p>That&rsquo;s annoying.</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">iris <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">summarize</span>(<span style="color:#900;font-weight:bold">mean</span>((<span style="color:#000;font-weight:bold">!!</span>thing)))
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## Warning in mean.default(~my_sym): argument is not numeric or logical: returning
+## NA
+</code></pre><pre><code>##   mean(my_sym)
+## 1           NA
+</code></pre><p>Whoa okay I expected that one to work and now I am definitely confused.  It wanted a column called <code>my_sym</code>. Did I do too many steps in the creation?</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#998;font-style:italic"># before:</span>
+<span style="color:#998;font-style:italic">## my_str &lt;- &#34;Sepal.Length&#34;</span>
+<span style="color:#998;font-style:italic">## my_sym &lt;- sym(my_str)</span>
+<span style="color:#998;font-style:italic">## thing &lt;- quo(my_sym)</span>
+
+thing2 <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">quo</span>(<span style="color:#d14">&#34;Sepal.Length&#34;</span>)
+
+iris <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">summarize</span>(<span style="color:#900;font-weight:bold">mean</span>(<span style="color:#000;font-weight:bold">!!</span>thing2))
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## Warning in mean.default(~&quot;Sepal.Length&quot;): argument is not numeric or logical:
+## returning NA
+</code></pre><pre><code>##   mean(&quot;Sepal.Length&quot;)
+## 1                   NA
+</code></pre><p>Oops.  Mean of a string is NA.</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">thing2 <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">quo</span>(Sepal.Length)
+
+iris <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">summarize</span>(<span style="color:#900;font-weight:bold">mean</span>(<span style="color:#000;font-weight:bold">!!</span>thing2))
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>##   mean(Sepal.Length)
+## 1           5.843333
+</code></pre><p><img src="http://33.media.tumblr.com/d549e8332bf7f41e1f20f8a731b1ee70/tumblr_naw1kaSfcy1r8jjn6o1_500.gif" alt=""></p>
+<p>I&rsquo;m curious what errors this will give:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">thing <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">quo</span>(<span style="color:#d14">&#34;mean(iris$Sepal.Length)&#34;</span>)
+
+<span style="color:#900;font-weight:bold">eval</span>(thing)
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## &lt;quosure&gt;
+## expr: ^&quot;mean(iris$Sepal.Length)&quot;
+## env:  empty
+</code></pre><div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#900;font-weight:bold">eval</span>(<span style="color:#000;font-weight:bold">!!</span>thing)
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>## Error: Quosures can only be unquoted within a quasiquotation context.
+## 
+##   # Bad:
+##   list(!!myquosure)
+## 
+##   # Good:
+##   dplyr::mutate(data, !!myquosure)
+</code></pre>
+
+
+
+<h2 id="final-conclusion">Final Conclusion
+  <a href="#final-conclusion"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<ul>
+<li><code>expr</code> turns my code under a name, ready to be <code>eval</code>-ed later.</li>
+<li><code>sym</code> turns my string into R code but also slaps some backticks on that bad boy if need be.</li>
+<li><code>quo</code> (or <code>enquo</code> in function) turns my code into a&hellip; a quosure.  Why?</li>
+<li><code>eval</code> evaluates the expression right the heck now</li>
+<li><code>!!</code> takes a symbol or a quosure and prepares a pre-result, let&rsquo;s say, for a later function to evaluate</li>
+<li><code>{{</code> mushes <code>!!</code> and <code>quo</code>/<code>enquo</code> into one function.</li>
+</ul>
+
+
+
+
+<h2 id="thoughts-on-teaching-tidy-eval">Thoughts on teaching tidy eval
+  <a href="#thoughts-on-teaching-tidy-eval"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p><em>Everything</em> centers around the idea of lazy vs eager eval.  I did not understand this until recently, but it&rsquo;s actually not too terribly complicated.</p>
+<p>Here is my analogy, because it is the task I am avoiding by doing this writeup:  Suppose you are doing laundry.</p>
+<p><strong>Eager Eval</strong>: Fold one pair of pants, put pants in drawer.  Fold one shirt, put shirt in drawer.  Fold another pair of pants, put pants in drawer.</p>
+<p><strong>Lazy Eval</strong>: Fold all laundry.  Put pants in pants drawer.  Put shirts in shirt drawer.</p>
+<p>The second is more efficient, but it requires you to keep track of multiple stacks of clothes as you work.</p>
+<p><code>expr</code> and <code>sym</code> fold the pants.  <code>eval</code> puts the pants in the drawer.</p>
+<p><code>!!sym</code>, <code>!!quo</code> or <code>{{</code> folds the pants and puts them on the pants pile.  When the parent function is called, the pants pile gets put in the drawer.</p>
+<p><img src="https://media1.giphy.com/media/QSLtvOL02ggyA/giphy.gif" alt=""></p>
+<p><em>and here we have parse-eval</em></p>
+
+
+
+
+<h2 id="remaining-questions">Remaining questions
+  <a href="#remaining-questions"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<ul>
+<li>
+<p>When might we actually want <code>!!</code> and <code>quo</code> to be separate steps?</p>
+</li>
+<li>
+<p>Why are quosures necessary, if you can <code>!!</code> symbols?</p>
+</li>
+<li>
+<p>Why can&rsquo;t you <code>eval</code> a quosure?  Why can&rsquo;t you <code>!!</code> an expression?  Why can you do both to a symbol?  <em>(More generally, I could use a clearer understanding of the role of these three object types.)</em></p>
+</li>
+</ul>
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">July 1, 2010</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">8 minute read, 1533 words</dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Categories:</dt>
+    <dd class="fw5 ml0"> <a href="/categories/r">R</a>  <a href="/categories/random">random</a> </dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="/blog/quarantine/">Diary of a Quarantined Friday &rarr;</a>
+  
+</div>
+
+      </footer>
+    </article>
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2021 Kelly Bodwin, San Luis Opispo, CA
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+      
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.instagram.com/kellbod" target="_blank" rel="noopener">
+      <i class="fab fa-instagram fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://twitter.com/kellybodwin" target="_blank" rel="noopener">
+      <i class="fab fa-twitter fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/kbodwin" target="_blank" rel="noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="/blog/index.xml" >
+      <i class="fas fa-rss fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+      
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="https://help.formspree.io" title="Visit Help Site">Help</a>
+      
+      <a class="dib pv1 ph2 link" href="https://help.formspree.io" title="Privacy Policy">Privacy</a>
+      
+      <a class="dib pv1 ph2 link" href="https://help.formspree.io" title="Terms and Conditions">Terms of Use</a>
+      
+      <a class="dib pv1 ph2 link" href="/index.xml" title="RSS Feed">RSS</a>
+      
+    </div>
+  </nav>
+</footer>
+
+      </div>
+    </body>
+</html>

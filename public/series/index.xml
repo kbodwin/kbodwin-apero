@@ -16,5 +16,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Student Projects</title>
+      <link>/series/student-projects/</link>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/series/student-projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talks and Presentations</title>
+      <link>/series/talks-and-presentations/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/series/talks-and-presentations/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

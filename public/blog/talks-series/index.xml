@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks and Presentations on Kelly Bodwin</title>
+    <link>/blog/talks-series/</link>
+    <description>Recent content in Talks and Presentations on Kelly Bodwin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/blog/talks-series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Course Material Creation in the R Ecosystem  (RStudio::conf 2020 talk) </title>
+      <link>/blog/talks-series/rstudio-conf-2020/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/talks-series/rstudio-conf-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introductory Statistics with R  (RStudio::conf 2019 talk) </title>
+      <link>/blog/talks-series/rstudio-conf-2019/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/talks-series/rstudio-conf-2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

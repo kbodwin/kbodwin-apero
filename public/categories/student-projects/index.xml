@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>student projects on Kelly Bodwin</title>
+    <link>/categories/student-projects/</link>
+    <description>Recent content in student projects on Kelly Bodwin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/categories/student-projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Student Projects</title>
+      <link>/blog/student-projects-series/</link>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/student-projects-series/</guid>
+      <description>** No content below YAML for the series _index. This file is a leaf bundle, and provides settings for the listing page layout and sidebar content.**</description>
+    </item>
+    
+  </channel>
+</rss>
