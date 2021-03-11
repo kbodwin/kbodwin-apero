@@ -7,7 +7,7 @@ show_post_thumbnail: true
 show_author_byline: true
 show_post_date: true
 # for listing page layout
-layout: list # list, list-sidebar, list-grid
+layout: list-sidebar # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
@@ -16,7 +16,7 @@ sidebar:
     The above quote is from the play *Arcadia* by Tom Stoppard, and it captures how I feel about the beauty of examining the world through a statistical lens.
   
   
-    Here you'll find an assortment of my thoughts, ideas, and experiments.  Don't expect regular updates, but feel free to poke around and see what's on my mind lately.
+    Here you'll find an assortment of my thoughts, ideas, and experiments; as well as some tutorials and updates on recent projects.  Don't expect regular updates, but feel free to poke around and see what's on my mind lately.
     
   author: "Kelly Bodwin"
   text_link_label: Subscribe via RSS

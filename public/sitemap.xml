@@ -3,27 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/student-projects-series/01-student-projects/</loc>
-    <lastmod>2021-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/sql-series/01-sql/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/day02/01-netlify/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
+    <loc>/collection/01-method/</loc>
+    <lastmod>2021-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/day01/01-github/</loc>
+    <loc>/collection/02-ds/01-github/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/prework/</loc>
+    <loc>/collection/03-edu/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,32 +33,17 @@
   </url>
   
   <url>
-    <loc>/collection/day01/</loc>
+    <loc>/collection/02-ds/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/day01/02-postcards/</loc>
+    <loc>/collection/02-ds/02-postcards/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/day02/02-blogdown/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/collection/day02/</loc>
-    <lastmod>2021-01-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/collection/day01/03-distill/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/collection/day02/03-blogdown/</loc>
+    <loc>/collection/02-ds/03-distill/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -108,16 +88,6 @@
   </url>
   
   <url>
-    <loc>/series/student-projects/</loc>
-    <lastmod>2021-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/student-projects-series/</loc>
-    <lastmod>2021-03-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url>
@@ -133,12 +103,22 @@
   </url>
   
   <url>
+    <loc>/collection/01-method/dcm/</loc>
+    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/projects/dcm/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/software/flair/</loc>
+    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/collection/01-method/lamb/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -169,6 +149,11 @@
   
   <url>
     <loc>/categories/r4edu/</loc>
+    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/polish_networks/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -278,6 +263,11 @@
   </url>
   
   <url>
+    <loc>/courses/decoder/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/tidyeval/</loc>
     <lastmod>2010-07-01T00:00:00+00:00</lastmod>
   </url>
@@ -296,6 +286,14 @@
   
   <url>
     <loc>/consulting/</loc>
+  </url>
+  
+  <url>
+    <loc>/series/student-projects/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/student-projects-series/</loc>
   </url>
   
   <url>

@@ -8,15 +8,6 @@
     <language>en</language>
     <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2020 Student Projects</title>
-      <link>/blog/student-projects-series/01-student-projects/</link>
-      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/student-projects-series/01-student-projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Setting up a SQL database with AWS.</title>
       <link>/blog/sql-series/01-sql/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>

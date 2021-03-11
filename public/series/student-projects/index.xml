@@ -5,21 +5,11 @@
     <link>/series/student-projects/</link>
     <description>Recent content in Student Projects on Kelly Bodwin</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/series/student-projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>2020 Student Projects</title>
-      <link>/blog/student-projects-series/01-student-projects/</link>
-      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/student-projects-series/01-student-projects/</guid>
-      <description></description>
-    </item>
-    
+    <language>en</language><atom:link href="/series/student-projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Student Projects</title>
       <link>/blog/student-projects-series/</link>
-      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/blog/student-projects-series/</guid>
       <description>** No content below YAML for the series _index. This file is a leaf bundle, and provides settings for the listing page layout and sidebar content.**</description>

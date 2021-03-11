@@ -13,12 +13,12 @@ categories:
   - package
   - r4edu
 images:
-  - /projects/dcm/brain.png
+  - /projects/dcm/genes.jpeg
 layout: single
 links:
 - icon: book-open
   icon_pack: fas
-  name: paper
+  name: Annals of Applied Statistics paper
   url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6927674/
 - icon: github
   icon_pack: fab

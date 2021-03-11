@@ -14,12 +14,12 @@ categories:
   - package
   - r4edu
 images:
-  - /projects/lamb/lamb-thumbnail.png
+ - /projects/lamb/lamb-thumbnail.png
 layout: single
 links:
 - icon: book-open
   icon_pack: fas
-  name: paper
+  name: arxiv paper
   url: https://arxiv.org/pdf/1711.10427.pdf
 - icon: github
   icon_pack: fab
