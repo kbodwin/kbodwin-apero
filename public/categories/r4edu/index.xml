@@ -38,6 +38,16 @@ summarize(mean(Sepal.Length))#&amp;gt; # A tibble: 3 x 2#&amp;gt; Species `me
     </item>
     
     <item>
+      <title>Shindig</title>
+      <link>/software/shindig/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/software/shindig/</guid>
+      <description>Shindig is a package to make it easier to convert static code to interactive Shiny output. AboutThis package is still in development.
+The goal is to create a set of &amp;ldquo;shortcut&amp;rdquo; functions for the common task to converting basic R code into code for an interactive Shiny app. With Shindig, the user will not need to write the server-side code for the app; they will only need to specify the appearance and inputs of the user interface.</description>
+    </item>
+    
+    <item>
       <title>templar</title>
       <link>/software/templar/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>

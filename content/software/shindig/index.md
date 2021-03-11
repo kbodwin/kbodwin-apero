@@ -4,7 +4,7 @@ subtitle: "Party with Shiny"
 excerpt: "Tools to create Shiny documents without all the hassle."
 date: 2021-01-25
 author: "Kelly Bodwin and Hunter Glanz"
-draft: true
+draft: false
 tags:
   - r4edu
 categories:
