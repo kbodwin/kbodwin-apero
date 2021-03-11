@@ -21,6 +21,8 @@ links:
   url: https://github.com/r-for-educators/templar
 ---
 
+**Co-authors:**  [Ian Flores Siaca](https://twitter.com/iflores_siaca) and [Desirée De Leon](https://twitter.com/dcossyle)
+
 ![templar hex](templar_hex.png)
 
 ## [templar](https://github.com/r-for-educators/templar) is a package that lets educators auto-generate repetitive course material content from R Markdown source files and yaml headers.

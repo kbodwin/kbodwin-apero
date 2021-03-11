@@ -25,7 +25,7 @@ links:
   url: https://github.com/kbodwin/LAMB
 ---
 
-### Co-Authors: [Carson Mosso](https://www.med.unc.edu/microimm/dittmerlab/directory/carson-nicholas-mosso/), [Suman Chakraborty](https://sites.google.com/view/sumanswebpage/), [Andrew Nobel](https://nobel.web.unc.edu/) and [Kai Zhang](https://zhangk.web.unc.edu/)
+**Co-Authors:** [Carson Mosso](https://www.med.unc.edu/microimm/dittmerlab/directory/carson-nicholas-mosso/), [Suman Chakraborty](https://sites.google.com/view/sumanswebpage/), [Andrew Nobel](https://nobel.web.unc.edu/) and [Kai Zhang](https://zhangk.web.unc.edu/)
 
 ## Paper Abstract:
 

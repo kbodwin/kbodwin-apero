@@ -26,6 +26,8 @@ links:
   url: https://github.com/r-for-educators/flair
 ---
 
+**Co-authors:**  [Hunter Glanz](www.twitter.com/hglanz)
+
 ![flair hex](flair_hex.png)
 
 ## [flair](https://github.com/r-for-educators/flair) is a package for adding highlighting and annotation to the source code chunks produced by R Markdown.

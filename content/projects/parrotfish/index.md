@@ -20,8 +20,7 @@ links:
   url: https://link.springer.com/epdf/10.1007/s00338-020-01977-9
 ---
 
-
-### Co-Authors: [Hannah Rempel](www.twitter.com/queenparrotfish) and [Ben Ruttenberg](https://www.marineconservationlab.org/people.html)
+**Co-Authors:** [Hannah Rempel](www.twitter.com/queenparrotfish) and [Ben Ruttenberg](https://www.marineconservationlab.org/people.html)
 
 ## Paper Abstract
 

@@ -24,7 +24,7 @@ links:
   url: https://github.com/kbodwin/differential-correlation-mining
 ---
 
-### Co-Authors: [Andrew Nobel](https://nobel.web.unc.edu/) and [Kai Zhang](https://zhangk.web.unc.edu/)
+**Co-Authors:** [Andrew Nobel](https://nobel.web.unc.edu/) and [Kai Zhang](https://zhangk.web.unc.edu/)
 
 ## Paper Abstract
 
