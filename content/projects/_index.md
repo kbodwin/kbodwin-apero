@@ -1,6 +1,6 @@
 ---
 title: Projects
-description: "Here are some of my open-source software development projects. My two areas of focus currently are meta-packages to help educators produce R content, and implementation of complex association mining methods."
+description: "This section contains published academic papers and ongoing research.  My primary research interests are in the development and implementation of novel association mining techniques, and in applications to the biological sciences and the digital humanities."
 show_post_thumbnail: true
 show_author_byline: false
 show_post_date: false

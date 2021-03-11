@@ -7,12 +7,10 @@ author: "Kelly Bodwin"
 draft: false
 featured: true
 show_post_thumbnail: true
-tags:
-  - r4edu
 categories:
+  - digital humanities
   - R
-  - package
-  - r4edu
+  - Shiny
 images:
  - /projects/polish-networks/poland-featured.png
 layout: single

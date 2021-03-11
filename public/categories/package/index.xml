@@ -17,15 +17,6 @@
     </item>
     
     <item>
-      <title>Differential Correlation Mining</title>
-      <link>/projects/dcm/</link>
-      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/dcm/</guid>
-      <description>DCM and stuff</description>
-    </item>
-    
-    <item>
       <title>flair</title>
       <link>/software/flair/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
@@ -44,25 +35,6 @@ summarize(mean(Sepal.Length))#&amp;gt; # A tibble: 3 x 2#&amp;gt; Species `me
       
       <guid>/collection/01-method/lamb/</guid>
       <description>DCM and stuff</description>
-    </item>
-    
-    <item>
-      <title>Latent Association Mining in Binary Data</title>
-      <link>/projects/lamb/</link>
-      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/lamb/</guid>
-      <description>DCM and stuff</description>
-    </item>
-    
-    <item>
-      <title>Social Networks in Pre-Revolutionary Poland</title>
-      <link>/projects/polish_networks/</link>
-      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/polish_networks/</guid>
-      <description>Historical ContextIn 1989, the country of Poland underwent a peaceful revolution, replacing its existing Communist government with a Democratically elected one. The culminating moment of this process was a Round Table agreement reached between leaders of the Opposition and Communist groups.
-How did this movement build over the decades prior, and how did these two groups come together? Our project aims to quantify the evolution of social network between key individuals and organizations over the years before 1989.</description>
     </item>
     
     <item>

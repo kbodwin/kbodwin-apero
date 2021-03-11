@@ -103,12 +103,27 @@
   </url>
   
   <url>
+    <loc>/categories/association-mining/</loc>
+    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/biology/</loc>
+    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/collection/01-method/dcm/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/projects/dcm/</loc>
+    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/digital-humanities/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -128,7 +143,22 @@
   </url>
   
   <url>
+    <loc>/categories/methodology/</loc>
+    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/modeling/</loc>
+    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/package/</loc>
+    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/parrotfish/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -149,6 +179,11 @@
   
   <url>
     <loc>/categories/r4edu/</loc>
+    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/shiny/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -268,6 +303,11 @@
   </url>
   
   <url>
+    <loc>/projects/authorship/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/tidyeval/</loc>
     <lastmod>2010-07-01T00:00:00+00:00</lastmod>
   </url>
@@ -286,18 +326,6 @@
   
   <url>
     <loc>/consulting/</loc>
-  </url>
-  
-  <url>
-    <loc>/series/student-projects/</loc>
-  </url>
-  
-  <url>
-    <loc>/blog/student-projects-series/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/student-projects/</loc>
   </url>
   
 </urlset>

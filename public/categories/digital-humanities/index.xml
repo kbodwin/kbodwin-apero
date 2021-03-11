@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>digital humanities on Kelly Bodwin</title>
+    <link>/categories/digital-humanities/</link>
+    <description>Recent content in digital humanities on Kelly Bodwin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/digital-humanities/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Social Networks in Pre-Revolutionary Poland</title>
+      <link>/projects/polish_networks/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/polish_networks/</guid>
+      <description>Historical ContextIn 1989, the country of Poland underwent a peaceful revolution, replacing its existing Communist government with a Democratically elected one. The culminating moment of this process was a Round Table agreement reached between leaders of the Opposition and Communist groups.
+How did this movement build over the decades prior, and how did these two groups come together? Our project aims to quantify the evolution of social network between key individuals and organizations over the years before 1989.</description>
+    </item>
+    
+    <item>
+      <title>Authorship on the Supreme Court of Canada</title>
+      <link>/projects/authorship/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/authorship/</guid>
+      <description>Paper Abstract - University of Toronto Law Journal PaperIn contrast to other branches of government, the Supreme Court of Canada operates with relatively lean staffing. For most of the Court’s history, its justices alone determined which cases to review, heard oral argument, and wrote opinions. Only since 1967 have justices have been aided in these responsibilities by law clerks. While interest abounds in the relationship between justices and their clerks – particularly the writing of opinions – very little is known.</description>
+    </item>
+    
+  </channel>
+</rss>
