@@ -25,6 +25,8 @@ links:
   url: https://github.com/kbodwin/LAMB
 ---
 
+### Co-Authors: [Carson Mosso](https://www.med.unc.edu/microimm/dittmerlab/directory/carson-nicholas-mosso/), [Suman Chakraborty](https://sites.google.com/view/sumanswebpage/), [Andrew Nobel](https://nobel.web.unc.edu/) and [Kai Zhang](https://zhangk.web.unc.edu/)
+
 ## Paper Abstract:
 
 We consider the problem of identifying stable sets of mutually associated features in moderate or high-dimensional binary data. In this context we develop and investigate a method

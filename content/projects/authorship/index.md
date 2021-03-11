@@ -24,6 +24,8 @@ links:
   url: /projects/authorship/easterbrook.pdf
 ---
 
+### Co-Authors: [Jeff Rosenthal](probability.ca) and [Albert Yoon](https://www.law.utoronto.ca/faculty-staff/full-time-faculty/albert-yoon)
+
 ## Paper Abstract - University of Toronto Law Journal Paper
 
 In contrast to other branches of government, the Supreme Court of

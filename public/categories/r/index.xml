@@ -60,7 +60,7 @@ Step 3: Make sure you choose the free tier! Select whatever username and passwor
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/projects/dcm/</guid>
-      <description>Paper AbstractGiven data obtained under two sampling conditions, it is often of interest to identify variables that behave differently in one condition than in the other. We introduce a method for differential analysis of second-order behavior called Differential Correlation Mining (DCM). The DCM method identifies differentially correlated sets of variables, with the property that the average pairwise correlation between variables in a set is higher under one sample condition than the other.</description>
+      <description>Co-Authors: Andrew Nobel and Kai ZhangPaper AbstractGiven data obtained under two sampling conditions, it is often of interest to identify variables that behave differently in one condition than in the other. We introduce a method for differential analysis of second-order behavior called Differential Correlation Mining (DCM). The DCM method identifies differentially correlated sets of variables, with the property that the average pairwise correlation between variables in a set is higher under one sample condition than the other.</description>
     </item>
     
     <item>
@@ -90,7 +90,7 @@ summarize(mean(Sepal.Length))#&amp;gt; # A tibble: 3 x 2#&amp;gt; Species `me
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/projects/lamb/</guid>
-      <description>Paper Abstract:We consider the problem of identifying stable sets of mutually associated features in moderate or high-dimensional binary data. In this context we develop and investigate a method called Latent Association Mining for Binary Data (LAMB). The LAMB method is based on a simple threshold model in which the observed binary values represent a random thresholding of a latent continuous vector that may have a complex association structure.</description>
+      <description>Co-Authors: Carson Mosso, Suman Chakraborty, Andrew Nobel and Kai ZhangPaper Abstract:We consider the problem of identifying stable sets of mutually associated features in moderate or high-dimensional binary data. In this context we develop and investigate a method called Latent Association Mining for Binary Data (LAMB). The LAMB method is based on a simple threshold model in which the observed binary values represent a random thresholding of a latent continuous vector that may have a complex association structure.</description>
     </item>
     
     <item>
@@ -99,7 +99,7 @@ summarize(mean(Sepal.Length))#&amp;gt; # A tibble: 3 x 2#&amp;gt; Species `me
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/projects/parrotfish/</guid>
-      <description>Paper AbstractParrotfishes are important Caribbean herbivores that are believed to indirectly benefit corals by grazing algae; yet, some species also feed on live coral, which may have direct negative impacts on coral growth and survivorship. Caribbean parrotfishes prey upon multiple coral species but have particularly high rates of predation on Orbicella annulari s, a major framework building coral andan endangered species. While some researchers have suggested that parrotfishes may have significant long-term impacts on heavily targeted species such as O.</description>
+      <description>Co-Authors: Hannah Rempel and Ben RuttenbergPaper AbstractParrotfishes are important Caribbean herbivores that are believed to indirectly benefit corals by grazing algae; yet, some species also feed on live coral, which may have direct negative impacts on coral growth and survivorship. Caribbean parrotfishes prey upon multiple coral species but have particularly high rates of predation on Orbicella annulari s, a major framework building coral andan endangered species.</description>
     </item>
     
     <item>
@@ -118,8 +118,8 @@ The goal is to create a set of &amp;ldquo;shortcut&amp;rdquo; functions for the 
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/projects/polish_networks/</guid>
-      <description>Historical ContextIn 1989, the country of Poland underwent a peaceful revolution, replacing its existing Communist government with a Democratically elected one. The culminating moment of this process was a Round Table agreement reached between leaders of the Opposition and Communist groups.
-How did this movement build over the decades prior, and how did these two groups come together? Our project aims to quantify the evolution of social network between key individuals and organizations over the years before 1989.</description>
+      <description>Co-Authors: Gregory Domber and Kien Nguyen.Historical ContextIn 1989, the country of Poland underwent a peaceful revolution, replacing its existing Communist government with a Democratically elected one. The culminating moment of this process was a Round Table agreement reached between leaders of the Opposition and Communist groups.
+How did this movement build over the decades prior, and how did these two groups come together?</description>
     </item>
     
     <item>

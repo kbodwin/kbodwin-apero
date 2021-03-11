@@ -25,7 +25,7 @@ links:
   url: "/projects/polish_networks/NDH3 Presentation Domber.pptx"
 ---
 
-
+### Co-Authors:  [Gregory Domber](https://history.calpoly.edu/faculty/greg-domber) and Kien Nguyen.
 
 ## Historical Context
 

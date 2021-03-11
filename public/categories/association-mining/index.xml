@@ -13,7 +13,7 @@
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/projects/dcm/</guid>
-      <description>Paper AbstractGiven data obtained under two sampling conditions, it is often of interest to identify variables that behave differently in one condition than in the other. We introduce a method for differential analysis of second-order behavior called Differential Correlation Mining (DCM). The DCM method identifies differentially correlated sets of variables, with the property that the average pairwise correlation between variables in a set is higher under one sample condition than the other.</description>
+      <description>Co-Authors: Andrew Nobel and Kai ZhangPaper AbstractGiven data obtained under two sampling conditions, it is often of interest to identify variables that behave differently in one condition than in the other. We introduce a method for differential analysis of second-order behavior called Differential Correlation Mining (DCM). The DCM method identifies differentially correlated sets of variables, with the property that the average pairwise correlation between variables in a set is higher under one sample condition than the other.</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/projects/lamb/</guid>
-      <description>Paper Abstract:We consider the problem of identifying stable sets of mutually associated features in moderate or high-dimensional binary data. In this context we develop and investigate a method called Latent Association Mining for Binary Data (LAMB). The LAMB method is based on a simple threshold model in which the observed binary values represent a random thresholding of a latent continuous vector that may have a complex association structure.</description>
+      <description>Co-Authors: Carson Mosso, Suman Chakraborty, Andrew Nobel and Kai ZhangPaper Abstract:We consider the problem of identifying stable sets of mutually associated features in moderate or high-dimensional binary data. In this context we develop and investigate a method called Latent Association Mining for Binary Data (LAMB). The LAMB method is based on a simple threshold model in which the observed binary values represent a random thresholding of a latent continuous vector that may have a complex association structure.</description>
     </item>
     
   </channel>

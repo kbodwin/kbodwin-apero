@@ -20,6 +20,9 @@ links:
   url: https://link.springer.com/epdf/10.1007/s00338-020-01977-9
 ---
 
+
+### Co-Authors: [Hannah Rempel](www.twitter.com/queenparrotfish) and [Ben Ruttenberg](https://www.marineconservationlab.org/people.html)
+
 ## Paper Abstract
 
 Parrotfishes are important Caribbean herbivores that are believed to indirectly benefit corals by grazing algae; yet, some species also feed on live coral, which may have direct negative impacts on coral growth and survivorship. Caribbean parrotfishes prey upon multiple coral species but have particularly high rates of predation on Orbicella annulari s, a major framework building coral andan endangered species. While some researchers have suggested that parrotfishes may have significant long-term impacts on heavily targeted species such as O. annularis, the patterns of coral recovery from parrotfish predation scars remain poorly under stood. 

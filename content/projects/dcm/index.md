@@ -24,6 +24,8 @@ links:
   url: https://github.com/kbodwin/differential-correlation-mining
 ---
 
+### Co-Authors: [Andrew Nobel](https://nobel.web.unc.edu/) and [Kai Zhang](https://zhangk.web.unc.edu/)
+
 ## Paper Abstract
 
 Given data obtained under two sampling conditions, it is often of interest to identify variables that behave differently in one condition than in the other. We introduce a method for differential analysis of second-order behavior called Differential Correlation Mining (DCM). The DCM method identifies differentially correlated sets of variables, with the property that the average pairwise correlation between variables in a set is higher under one sample condition than the other. DCM is based on an iterative search procedure that adaptively updates the size and elements of a candidate variable set. Updates are performed via hypothesis testing of individual variables, based on the asymptotic distribution of their average differential correlation. We investigate the performance of DCM by applying it to simulated data as well as to recent experimental datasets in genomics and brain imaging.
