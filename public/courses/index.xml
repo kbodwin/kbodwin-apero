@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Public Learning Materials on Kelly Bodwin</title>
-    <link>/courses/</link>
+    <link>https://www.kelly-bodwin.com/courses/</link>
     <description>Recent content in Public Learning Materials on Kelly Bodwin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/courses/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelly-bodwin.com/courses/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advanced Statistical Computing with R</title>
-      <link>/courses/stat541/</link>
+      <link>https://www.kelly-bodwin.com/courses/stat541/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/courses/stat541/</guid>
+      <guid>https://www.kelly-bodwin.com/courses/stat541/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introduction to R for Statistics and Data Science</title>
-      <link>/courses/stat331/</link>
+      <link>https://www.kelly-bodwin.com/courses/stat331/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/courses/stat331/</guid>
+      <guid>https://www.kelly-bodwin.com/courses/stat331/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introduction to the Field of Statistics (and R)</title>
-      <link>/courses/stat150/</link>
+      <link>https://www.kelly-bodwin.com/courses/stat150/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/courses/stat150/</guid>
+      <guid>https://www.kelly-bodwin.com/courses/stat150/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Intro to Tidyverse Workshop Materials</title>
-      <link>/courses/rworkshop-2021/</link>
+      <link>https://www.kelly-bodwin.com/courses/rworkshop-2021/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/courses/rworkshop-2021/</guid>
+      <guid>https://www.kelly-bodwin.com/courses/rworkshop-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Workshop Materials</title>
-      <link>/courses/rworkshop-2019/</link>
+      <link>https://www.kelly-bodwin.com/courses/rworkshop-2019/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/courses/rworkshop-2019/</guid>
+      <guid>https://www.kelly-bodwin.com/courses/rworkshop-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>&#39;decodeR&#39;: Puzzle activities for learning R</title>
-      <link>/courses/decoder/</link>
+      <link>https://www.kelly-bodwin.com/courses/decoder/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/courses/decoder/</guid>
+      <guid>https://www.kelly-bodwin.com/courses/decoder/</guid>
       <description></description>
     </item>
     

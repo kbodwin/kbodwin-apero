@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo-site on Kelly Bodwin</title>
-    <link>/tags/hugo-site/</link>
+    <link>https://www.kelly-bodwin.com/tags/hugo-site/</link>
     <description>Recent content in hugo-site on Kelly Bodwin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/hugo-site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelly-bodwin.com/tags/hugo-site/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up a SQL database with AWS.</title>
-      <link>/blog/sql-series/01-sql/</link>
+      <link>https://www.kelly-bodwin.com/blog/sql-series/01-sql/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/sql-series/01-sql/</guid>
+      <guid>https://www.kelly-bodwin.com/blog/sql-series/01-sql/</guid>
       <description>Making a database on AmazonStep 1: Create an AWS account. I did it a long time ago, it&amp;rsquo;s pretty straightforward, I&amp;rsquo;m not going to re-do it here for no reason.
 Step 2: Follow Items 1-5 only in this tutorial to create a databaset instance.
 Step 3: Make sure you choose the free tier! Select whatever username and password you want - but it&amp;rsquo;s a pain in the butt to add additional users, so if security is not a huge concern and you want your database to be broadly accessible, choose a username and password that you&amp;rsquo;re willing to share.</description>
@@ -20,37 +20,37 @@ Step 3: Make sure you choose the free tier! Select whatever username and passwor
     
     <item>
       <title>Course Material Creation in the R Ecosystem  (RStudio::conf 2020 talk) </title>
-      <link>/blog/talks-series/rstudio-conf-2020/</link>
+      <link>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2020/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/talks-series/rstudio-conf-2020/</guid>
+      <guid>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introductory Statistics with R  (RStudio::conf 2019 talk) </title>
-      <link>/blog/talks-series/rstudio-conf-2019/</link>
+      <link>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2019/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/talks-series/rstudio-conf-2019/</guid>
+      <guid>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R and SQL</title>
-      <link>/blog/sql-series/</link>
+      <link>https://www.kelly-bodwin.com/blog/sql-series/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/sql-series/</guid>
+      <guid>https://www.kelly-bodwin.com/blog/sql-series/</guid>
       <description>** No content below YAML for the series _index. This file is a leaf bundle, and provides settings for the listing page layout and sidebar content.**</description>
     </item>
     
     <item>
       <title>Talks and Presentations</title>
-      <link>/blog/talks-series/</link>
+      <link>https://www.kelly-bodwin.com/blog/talks-series/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/talks-series/</guid>
+      <guid>https://www.kelly-bodwin.com/blog/talks-series/</guid>
       <description>** No content below YAML for the series _index. This file is a leaf bundle, and provides settings for the listing page layout and sidebar content.**</description>
     </item>
     
