@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>statistics on Kelly Bodwin</title>
-    <link>https://www.kelly-bodwin.com/categories/statistics/</link>
+    <link>/categories/statistics/</link>
     <description>Recent content in statistics on Kelly Bodwin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelly-bodwin.com/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advanced Statistical Computing with R</title>
-      <link>https://www.kelly-bodwin.com/courses/stat541/</link>
+      <link>/courses/stat541/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/courses/stat541/</guid>
+      <guid>/courses/stat541/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introduction to R for Statistics and Data Science</title>
-      <link>https://www.kelly-bodwin.com/courses/stat331/</link>
+      <link>/courses/stat331/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/courses/stat331/</guid>
+      <guid>/courses/stat331/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introduction to the Field of Statistics (and R)</title>
-      <link>https://www.kelly-bodwin.com/courses/stat150/</link>
+      <link>/courses/stat150/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/courses/stat150/</guid>
+      <guid>/courses/stat150/</guid>
       <description></description>
     </item>
     

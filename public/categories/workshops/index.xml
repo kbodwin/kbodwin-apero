@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>workshops on Kelly Bodwin</title>
-    <link>https://www.kelly-bodwin.com/categories/workshops/</link>
+    <link>/categories/workshops/</link>
     <description>Recent content in workshops on Kelly Bodwin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 09 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelly-bodwin.com/categories/workshops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/workshops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Intro to Tidyverse Workshop Materials</title>
-      <link>https://www.kelly-bodwin.com/courses/rworkshop-2021/</link>
+      <link>/courses/rworkshop-2021/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/courses/rworkshop-2021/</guid>
+      <guid>/courses/rworkshop-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Workshop Materials</title>
-      <link>https://www.kelly-bodwin.com/courses/rworkshop-2019/</link>
+      <link>/courses/rworkshop-2019/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/courses/rworkshop-2019/</guid>
+      <guid>/courses/rworkshop-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>&#39;decodeR&#39;: Puzzle activities for learning R</title>
-      <link>https://www.kelly-bodwin.com/courses/decoder/</link>
+      <link>/courses/decoder/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/courses/decoder/</guid>
+      <guid>/courses/decoder/</guid>
       <description></description>
     </item>
     

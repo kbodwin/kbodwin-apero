@@ -2,170 +2,170 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Kelly Bodwin</title>
-    <link>https://www.kelly-bodwin.com/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Kelly Bodwin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelly-bodwin.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>R</title>
-      <link>https://www.kelly-bodwin.com/categories/r/</link>
+      <link>/categories/r/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/r/</guid>
+      <guid>/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SQL</title>
-      <link>https://www.kelly-bodwin.com/categories/sql/</link>
+      <link>/categories/sql/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/sql/</guid>
+      <guid>/categories/sql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorials</title>
-      <link>https://www.kelly-bodwin.com/categories/tutorials/</link>
+      <link>/categories/tutorials/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/tutorials/</guid>
+      <guid>/categories/tutorials/</guid>
       <description></description>
     </item>
     
     <item>
       <title>association mining</title>
-      <link>https://www.kelly-bodwin.com/categories/association-mining/</link>
+      <link>/categories/association-mining/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/association-mining/</guid>
+      <guid>/categories/association-mining/</guid>
       <description></description>
     </item>
     
     <item>
       <title>biology</title>
-      <link>https://www.kelly-bodwin.com/categories/biology/</link>
+      <link>/categories/biology/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/biology/</guid>
+      <guid>/categories/biology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>digital humanities</title>
-      <link>https://www.kelly-bodwin.com/categories/digital-humanities/</link>
+      <link>/categories/digital-humanities/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/digital-humanities/</guid>
+      <guid>/categories/digital-humanities/</guid>
       <description></description>
     </item>
     
     <item>
       <title>methodology</title>
-      <link>https://www.kelly-bodwin.com/categories/methodology/</link>
+      <link>/categories/methodology/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/methodology/</guid>
+      <guid>/categories/methodology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>modeling</title>
-      <link>https://www.kelly-bodwin.com/categories/modeling/</link>
+      <link>/categories/modeling/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/modeling/</guid>
+      <guid>/categories/modeling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>package</title>
-      <link>https://www.kelly-bodwin.com/categories/package/</link>
+      <link>/categories/package/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/package/</guid>
+      <guid>/categories/package/</guid>
       <description></description>
     </item>
     
     <item>
       <title>r4edu</title>
-      <link>https://www.kelly-bodwin.com/categories/r4edu/</link>
+      <link>/categories/r4edu/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/r4edu/</guid>
+      <guid>/categories/r4edu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shiny</title>
-      <link>https://www.kelly-bodwin.com/categories/shiny/</link>
+      <link>/categories/shiny/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/shiny/</guid>
+      <guid>/categories/shiny/</guid>
       <description></description>
     </item>
     
     <item>
       <title>course websites</title>
-      <link>https://www.kelly-bodwin.com/categories/course-websites/</link>
+      <link>/categories/course-websites/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/course-websites/</guid>
+      <guid>/categories/course-websites/</guid>
       <description></description>
     </item>
     
     <item>
       <title>statistics</title>
-      <link>https://www.kelly-bodwin.com/categories/statistics/</link>
+      <link>/categories/statistics/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/statistics/</guid>
+      <guid>/categories/statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tidyverse</title>
-      <link>https://www.kelly-bodwin.com/categories/tidyverse/</link>
+      <link>/categories/tidyverse/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/tidyverse/</guid>
+      <guid>/categories/tidyverse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>workshops</title>
-      <link>https://www.kelly-bodwin.com/categories/workshops/</link>
+      <link>/categories/workshops/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/workshops/</guid>
+      <guid>/categories/workshops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>random</title>
-      <link>https://www.kelly-bodwin.com/categories/random/</link>
+      <link>/categories/random/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/random/</guid>
+      <guid>/categories/random/</guid>
       <description></description>
     </item>
     
     <item>
       <title>education</title>
-      <link>https://www.kelly-bodwin.com/categories/education/</link>
+      <link>/categories/education/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/education/</guid>
+      <guid>/categories/education/</guid>
       <description></description>
     </item>
     
     <item>
       <title>talks</title>
-      <link>https://www.kelly-bodwin.com/categories/talks/</link>
+      <link>/categories/talks/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/categories/talks/</guid>
+      <guid>/categories/talks/</guid>
       <description></description>
     </item>
     
