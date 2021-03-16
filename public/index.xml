@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kelly Bodwin, Ph.D. on Kelly Bodwin</title>
-    <link>https://www.kelly-bodwin.com/</link>
+    <link>/</link>
     <description>Recent content in Kelly Bodwin, Ph.D. on Kelly Bodwin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Feb 2019 12:27:33 -0600</lastBuildDate><atom:link href="https://www.kelly-bodwin.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Feb 2019 12:27:33 -0600</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up a SQL database with AWS.</title>
-      <link>https://www.kelly-bodwin.com/blog/sql-series/01-sql/</link>
+      <link>/blog/sql-series/01-sql/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/blog/sql-series/01-sql/</guid>
+      <guid>/blog/sql-series/01-sql/</guid>
       <description>Making a database on AmazonStep 1: Create an AWS account. I did it a long time ago, it&amp;rsquo;s pretty straightforward, I&amp;rsquo;m not going to re-do it here for no reason.
 Step 2: Follow Items 1-5 only in this tutorial to create a databaset instance.
 Step 3: Make sure you choose the free tier! Select whatever username and password you want - but it&amp;rsquo;s a pain in the butt to add additional users, so if security is not a huge concern and you want your database to be broadly accessible, choose a username and password that you&amp;rsquo;re willing to share.</description>
@@ -20,10 +20,10 @@ Step 3: Make sure you choose the free tier! Select whatever username and passwor
     
     <item>
       <title>A GitHub profile</title>
-      <link>https://www.kelly-bodwin.com/collection/02-ds/01-github/</link>
+      <link>/collection/02-ds/01-github/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/collection/02-ds/01-github/</guid>
+      <guid>/collection/02-ds/01-github/</guid>
       <description>Profilehttps://docs.github.com/en/github/setting-up-and-managing-your-github-profile/personalizing-your-profile
 Pin projects to profilehttps://docs.github.com/en/github/setting-up-and-managing-your-github-profile/pinning-items-to-your-profile
 Profile READMEThis is new! Let&amp;rsquo;s do it:
@@ -32,38 +32,38 @@ https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/ma
     
     <item>
       <title>Prework</title>
-      <link>https://www.kelly-bodwin.com/collection/03-edu/</link>
+      <link>/collection/03-edu/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/collection/03-edu/</guid>
+      <guid>/collection/03-edu/</guid>
       <description>Welcome to the Introducing Yourself Online workshop! We look forward to meeting you. Before attending the workshop, please complete the following prework.
 Set up RStudio CloudSign up for a free RStudio Cloud account at https://rstudio.cloud/ before the workshop. I recommend logging in with an existing Google or GitHub account, if you have one (rather than creating a new account with another password you have to remember).</description>
     </item>
     
     <item>
       <title>Course Material Creation in the R Ecosystem  (RStudio::conf 2020 talk) </title>
-      <link>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2020/</link>
+      <link>/blog/talks-series/rstudio-conf-2020/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2020/</guid>
+      <guid>/blog/talks-series/rstudio-conf-2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introductory Statistics with R  (RStudio::conf 2019 talk) </title>
-      <link>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2019/</link>
+      <link>/blog/talks-series/rstudio-conf-2019/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2019/</guid>
+      <guid>/blog/talks-series/rstudio-conf-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A postcard</title>
-      <link>https://www.kelly-bodwin.com/collection/02-ds/02-postcards/</link>
+      <link>/collection/02-ds/02-postcards/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/collection/02-ds/02-postcards/</guid>
+      <guid>/collection/02-ds/02-postcards/</guid>
       <description>Pre-requisitesFirst, make sure you have the latest version of the postcards package installed from CRAN:
 install.packages(&amp;quot;postcards&amp;quot;)Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:
  Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS).  packageVersion(&amp;quot;postcards&amp;quot;)[1] ‘0.2.0’Create GitHub repoOnline.</description>
@@ -71,10 +71,10 @@ install.packages(&amp;quot;postcards&amp;quot;)Restart your R session. If you u
     
     <item>
       <title>A distill site</title>
-      <link>https://www.kelly-bodwin.com/collection/02-ds/03-distill/</link>
+      <link>/collection/02-ds/03-distill/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/collection/02-ds/03-distill/</guid>
+      <guid>/collection/02-ds/03-distill/</guid>
       <description>Pre-requisitesFirst, make sure you have the latest version of the distill package installed from CRAN:
 install.packages(&amp;quot;distill&amp;quot;) Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:
  Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS).  &amp;lt;!-- --&amp;gt;packageVersion(&amp;quot;distill&amp;quot;)[1] ‘1.2’ Create GitHub repoOnline.</description>
@@ -82,29 +82,29 @@ install.packages(&amp;quot;distill&amp;quot;) Restart your R session. If you us
     
     <item>
       <title>Differential Correlation Mining</title>
-      <link>https://www.kelly-bodwin.com/collection/01-method/dcm/</link>
+      <link>/collection/01-method/dcm/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/collection/01-method/dcm/</guid>
+      <guid>/collection/01-method/dcm/</guid>
       <description>DCM and stuff</description>
     </item>
     
     <item>
       <title>Differential Correlation Mining</title>
-      <link>https://www.kelly-bodwin.com/projects/dcm/</link>
+      <link>/projects/dcm/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/projects/dcm/</guid>
+      <guid>/projects/dcm/</guid>
       <description>Co-Authors: Andrew Nobel and Kai Zhang
 Paper AbstractGiven data obtained under two sampling conditions, it is often of interest to identify variables that behave differently in one condition than in the other. We introduce a method for differential analysis of second-order behavior called Differential Correlation Mining (DCM). The DCM method identifies differentially correlated sets of variables, with the property that the average pairwise correlation between variables in a set is higher under one sample condition than the other.</description>
     </item>
     
     <item>
       <title>flair</title>
-      <link>https://www.kelly-bodwin.com/software/flair/</link>
+      <link>/software/flair/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/software/flair/</guid>
+      <guid>/software/flair/</guid>
       <description>Co-authors: Hunter Glanz
 flair is a package for adding highlighting and annotation to the source code chunks produced by R Markdown. AboutThe goal of flair is to give users an easy and reproducible way to change the colors and highlighting in source code chunks. For example,
 iris %&amp;gt;%
@@ -114,49 +114,49 @@ summarize(mean(Sepal.Length))#&amp;gt; # A tibble: 3 x 2#&amp;gt; Species `me
     
     <item>
       <title>Latent Association Mining in Binary Data</title>
-      <link>https://www.kelly-bodwin.com/collection/01-method/lamb/</link>
+      <link>/collection/01-method/lamb/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/collection/01-method/lamb/</guid>
+      <guid>/collection/01-method/lamb/</guid>
       <description>DCM and stuff</description>
     </item>
     
     <item>
       <title>Latent Association Mining in Binary Data</title>
-      <link>https://www.kelly-bodwin.com/projects/lamb/</link>
+      <link>/projects/lamb/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/projects/lamb/</guid>
+      <guid>/projects/lamb/</guid>
       <description>Co-Authors: Carson Mosso, Suman Chakraborty, Andrew Nobel and Kai Zhang
 Paper Abstract:We consider the problem of identifying stable sets of mutually associated features in moderate or high-dimensional binary data. In this context we develop and investigate a method called Latent Association Mining for Binary Data (LAMB). The LAMB method is based on a simple threshold model in which the observed binary values represent a random thresholding of a latent continuous vector that may have a complex association structure.</description>
     </item>
     
     <item>
       <title>Parrotfish Predation on Coral</title>
-      <link>https://www.kelly-bodwin.com/projects/parrotfish/</link>
+      <link>/projects/parrotfish/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/projects/parrotfish/</guid>
+      <guid>/projects/parrotfish/</guid>
       <description>Co-Authors: Hannah Rempel and Ben Ruttenberg
 Paper AbstractParrotfishes are important Caribbean herbivores that are believed to indirectly benefit corals by grazing algae; yet, some species also feed on live coral, which may have direct negative impacts on coral growth and survivorship. Caribbean parrotfishes prey upon multiple coral species but have particularly high rates of predation on Orbicella annulari s, a major framework building coral andan endangered species.</description>
     </item>
     
     <item>
       <title>Shindig</title>
-      <link>https://www.kelly-bodwin.com/software/shindig/</link>
+      <link>/software/shindig/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/software/shindig/</guid>
+      <guid>/software/shindig/</guid>
       <description>Shindig is a package to make it easier to convert static code to interactive Shiny output. AboutThis package is still in development.
 The goal is to create a set of &amp;ldquo;shortcut&amp;rdquo; functions for the common task to converting basic R code into code for an interactive Shiny app. With Shindig, the user will not need to write the server-side code for the app; they will only need to specify the appearance and inputs of the user interface.</description>
     </item>
     
     <item>
       <title>Social Networks in Pre-Revolutionary Poland</title>
-      <link>https://www.kelly-bodwin.com/projects/polish_networks/</link>
+      <link>/projects/polish_networks/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/projects/polish_networks/</guid>
+      <guid>/projects/polish_networks/</guid>
       <description>Co-Authors: Gregory Domber and Kien Nguyen.
 Historical ContextIn 1989, the country of Poland underwent a peaceful revolution, replacing its existing Communist government with a Democratically elected one. The culminating moment of this process was a Round Table agreement reached between leaders of the Opposition and Communist groups.
 How did this movement build over the decades prior, and how did these two groups come together? Our project aims to quantify the evolution of social network between key individuals and organizations over the years before 1989.</description>
@@ -164,10 +164,10 @@ How did this movement build over the decades prior, and how did these two groups
     
     <item>
       <title>templar</title>
-      <link>https://www.kelly-bodwin.com/software/templar/</link>
+      <link>/software/templar/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/software/templar/</guid>
+      <guid>/software/templar/</guid>
       <description>Co-authors: Ian Flores Siaca and Desirée De Leon
 templar is a package that lets educators auto-generate repetitive course material content from R Markdown source files and yaml headers. AboutThis package is still in development.
 The goal is to create a set of templates for course material sets, such as the syllabus, assignments, exams, and labs. Information about each course will be stored in one unified yaml file, so that the materials can be updated each year (or quarter or semester) without having to hunt through each individual file and search for dates and details.</description>
@@ -175,46 +175,46 @@ The goal is to create a set of templates for course material sets, such as the s
     
     <item>
       <title>Advanced Statistical Computing with R</title>
-      <link>https://www.kelly-bodwin.com/courses/stat541/</link>
+      <link>/courses/stat541/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/courses/stat541/</guid>
+      <guid>/courses/stat541/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introduction to R for Statistics and Data Science</title>
-      <link>https://www.kelly-bodwin.com/courses/stat331/</link>
+      <link>/courses/stat331/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/courses/stat331/</guid>
+      <guid>/courses/stat331/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introduction to the Field of Statistics (and R)</title>
-      <link>https://www.kelly-bodwin.com/courses/stat150/</link>
+      <link>/courses/stat150/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/courses/stat150/</guid>
+      <guid>/courses/stat150/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Intro to Tidyverse Workshop Materials</title>
-      <link>https://www.kelly-bodwin.com/courses/rworkshop-2021/</link>
+      <link>/courses/rworkshop-2021/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/courses/rworkshop-2021/</guid>
+      <guid>/courses/rworkshop-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Diary of a Quarantined Friday</title>
-      <link>https://www.kelly-bodwin.com/blog/quarantine/</link>
+      <link>/blog/quarantine/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/blog/quarantine/</guid>
+      <guid>/blog/quarantine/</guid>
       <description>10:29amI wake up exactly one minute before my alarm. Good job, me! I open my phone to a sea of notifications. I ignore them and open twitter to see the latest coronavirus news.
 10:30amMy alarm goes off, scaring the bejeezus out of me.
 10:45am - 10:55amI pull myself away from the stress-scrolling and take a shower.</description>
@@ -222,28 +222,28 @@ The goal is to create a set of templates for course material sets, such as the s
     
     <item>
       <title>R Workshop Materials</title>
-      <link>https://www.kelly-bodwin.com/courses/rworkshop-2019/</link>
+      <link>/courses/rworkshop-2019/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/courses/rworkshop-2019/</guid>
+      <guid>/courses/rworkshop-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Questions and Inquiries</title>
-      <link>https://www.kelly-bodwin.com/contact/</link>
+      <link>/contact/</link>
       <pubDate>Mon, 25 Feb 2019 13:38:41 -0600</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/contact/</guid>
+      <guid>/contact/</guid>
       <description>** Contact page don&amp;rsquo;t contain a body, just the front matter above. See form.html in the layouts folder **</description>
     </item>
     
     <item>
       <title>Typography Styles &amp; Element Examples</title>
-      <link>https://www.kelly-bodwin.com/elements/</link>
+      <link>/elements/</link>
       <pubDate>Mon, 18 Feb 2019 12:27:33 -0600</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/elements/</guid>
+      <guid>/elements/</guid>
       <description>Font SizesAAAAAAAA6rem
 (96px)5rem
 (80px)3rem
@@ -257,49 +257,49 @@ The goal is to create a set of templates for course material sets, such as the s
     
     <item>
       <title>&#39;decodeR&#39;: Puzzle activities for learning R</title>
-      <link>https://www.kelly-bodwin.com/courses/decoder/</link>
+      <link>/courses/decoder/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/courses/decoder/</guid>
+      <guid>/courses/decoder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Authorship on the Supreme Court of Canada</title>
-      <link>https://www.kelly-bodwin.com/projects/authorship/</link>
+      <link>/projects/authorship/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/projects/authorship/</guid>
+      <guid>/projects/authorship/</guid>
       <description>Co-Authors: Jeff Rosenthal and Albert Yoon
 Paper Abstract - University of Toronto Law Journal PaperIn contrast to other branches of government, the Supreme Court of Canada operates with relatively lean staffing. For most of the Court’s history, its justices alone determined which cases to review, heard oral argument, and wrote opinions. Only since 1967 have justices have been aided in these responsibilities by law clerks. While interest abounds in the relationship between justices and their clerks – particularly the writing of opinions – very little is known.</description>
     </item>
     
     <item>
       <title>Tidy Eval is Confusing Sometimes</title>
-      <link>https://www.kelly-bodwin.com/blog/tidyeval/</link>
+      <link>/blog/tidyeval/</link>
       <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/blog/tidyeval/</guid>
+      <guid>/blog/tidyeval/</guid>
       <description>ggplot2ggplot2::
 1 2  library(tidyverse) library(rlang)   IntroductionThe purpose of this document is to once and for all figure out how to use tidy eval in my functions. I keep thinking I understand it, and then messing up the next time. The last time I wrote decent working complex tidy eval code, I had Joe Motherflipping Cheng coaching me&amp;hellip; can&amp;rsquo;t count on that every time. Let&amp;rsquo;s figure this ish out.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://www.kelly-bodwin.com/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/about/</guid>
+      <guid>/about/</guid>
       <description>My BackgroundI have been at Cal Poly since 2017, where I teach R programming, Data Science, and introductory statistics. I also help run the San Luis Obispo area R Meetup Group.
 I grew up in Cupertino, California in a family full of computer scientists. My undergraduate degree is from Harvard University, where I earned a B.A. in Statistics with minor degrees in English and French. I wrote my senior thesis under the mentorship of the incomparable Professor Joe Blitzstein.</description>
     </item>
     
     <item>
       <title>Contributors</title>
-      <link>https://www.kelly-bodwin.com/contributors/</link>
+      <link>/contributors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/contributors/</guid>
+      <guid>/contributors/</guid>
       <description>Thank you to all the folks who have contributed both technical and creative skills to this project:
   Desirée De Leon 🦒 (designed 5 of the custom color themes, made illustrations for the workshop, and provided general aesthetic feedback along the way)
   Garrick Aden-Buie 🧙‍♀️ (debugged headroom.js and lent his panelset.js code to the theme)
@@ -308,10 +308,10 @@ I grew up in Cupertino, California in a family full of computer scientists. My u
     
     <item>
       <title>License</title>
-      <link>https://www.kelly-bodwin.com/license/</link>
+      <link>/license/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/license/</guid>
+      <guid>/license/</guid>
       <description>My blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License.
 </description>
     </item>

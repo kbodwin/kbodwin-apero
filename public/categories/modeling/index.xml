@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>modeling on Kelly Bodwin</title>
-    <link>https://www.kelly-bodwin.com/categories/modeling/</link>
+    <link>/categories/modeling/</link>
     <description>Recent content in modeling on Kelly Bodwin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelly-bodwin.com/categories/modeling/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/modeling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Parrotfish Predation on Coral</title>
-      <link>https://www.kelly-bodwin.com/projects/parrotfish/</link>
+      <link>/projects/parrotfish/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/projects/parrotfish/</guid>
+      <guid>/projects/parrotfish/</guid>
       <description>Co-Authors: Hannah Rempel and Ben Ruttenberg
 Paper AbstractParrotfishes are important Caribbean herbivores that are believed to indirectly benefit corals by grazing algae; yet, some species also feed on live coral, which may have direct negative impacts on coral growth and survivorship. Caribbean parrotfishes prey upon multiple coral species but have particularly high rates of predation on Orbicella annulari s, a major framework building coral andan endangered species.</description>
     </item>
     
     <item>
       <title>Authorship on the Supreme Court of Canada</title>
-      <link>https://www.kelly-bodwin.com/projects/authorship/</link>
+      <link>/projects/authorship/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.kelly-bodwin.com/projects/authorship/</guid>
+      <guid>/projects/authorship/</guid>
       <description>Co-Authors: Jeff Rosenthal and Albert Yoon
 Paper Abstract - University of Toronto Law Journal PaperIn contrast to other branches of government, the Supreme Court of Canada operates with relatively lean staffing. For most of the Court’s history, its justices alone determined which cases to review, heard oral argument, and wrote opinions. Only since 1967 have justices have been aided in these responsibilities by law clerks. While interest abounds in the relationship between justices and their clerks – particularly the writing of opinions – very little is known.</description>
     </item>
