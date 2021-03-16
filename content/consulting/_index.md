@@ -1,7 +1,7 @@
 ---
 title: "Services"
 description: |
-  Consulting and private tutoring services.
+  Consulting and private tutoring services for Data Science and Statistics.
 show_header: true
 sidebar_left: false
 # Keep this! Do not edit.
