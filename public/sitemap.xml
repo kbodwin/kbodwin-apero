@@ -3,334 +3,334 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/sql-series/01-sql/</loc>
+    <loc>https://www.kelly-bodwin.com/blog/sql-series/01-sql/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/01-method/</loc>
+    <loc>https://www.kelly-bodwin.com/collection/01-method/</loc>
     <lastmod>2021-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/02-ds/01-github/</loc>
+    <loc>https://www.kelly-bodwin.com/collection/02-ds/01-github/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/03-edu/</loc>
+    <loc>https://www.kelly-bodwin.com/collection/03-edu/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/talks-series/rstudio-conf-2020/</loc>
+    <loc>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2020/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/talks-series/rstudio-conf-2019/</loc>
+    <loc>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2019/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/02-ds/</loc>
+    <loc>https://www.kelly-bodwin.com/collection/02-ds/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/02-ds/02-postcards/</loc>
+    <loc>https://www.kelly-bodwin.com/collection/02-ds/02-postcards/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/02-ds/03-distill/</loc>
+    <loc>https://www.kelly-bodwin.com/collection/02-ds/03-distill/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/hugo-site/</loc>
+    <loc>https://www.kelly-bodwin.com/tags/hugo-site/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
+    <loc>https://www.kelly-bodwin.com/blog/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/r/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/series/r-and-sql/</loc>
+    <loc>https://www.kelly-bodwin.com/series/r-and-sql/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/sql-series/</loc>
+    <loc>https://www.kelly-bodwin.com/blog/sql-series/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/series/</loc>
+    <loc>https://www.kelly-bodwin.com/series/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/sql/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/sql/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://www.kelly-bodwin.com/tags/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/tutorials/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/tutorials/</loc>
     <lastmod>2021-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/</loc>
+    <loc>https://www.kelly-bodwin.com/collection/</loc>
     <lastmod>2021-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/association-mining/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/association-mining/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/biology/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/biology/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/01-method/dcm/</loc>
+    <loc>https://www.kelly-bodwin.com/collection/01-method/dcm/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/projects/dcm/</loc>
+    <loc>https://www.kelly-bodwin.com/projects/dcm/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/digital-humanities/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/digital-humanities/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/software/flair/</loc>
+    <loc>https://www.kelly-bodwin.com/software/flair/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/collection/01-method/lamb/</loc>
+    <loc>https://www.kelly-bodwin.com/collection/01-method/lamb/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/projects/lamb/</loc>
+    <loc>https://www.kelly-bodwin.com/projects/lamb/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/methodology/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/methodology/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/modeling/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/modeling/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/package/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/package/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/projects/parrotfish/</loc>
+    <loc>https://www.kelly-bodwin.com/projects/parrotfish/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/projects/</loc>
+    <loc>https://www.kelly-bodwin.com/projects/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/software/</loc>
+    <loc>https://www.kelly-bodwin.com/software/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/r4edu/</loc>
+    <loc>https://www.kelly-bodwin.com/tags/r4edu/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/r4edu/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/r4edu/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/software/shindig/</loc>
+    <loc>https://www.kelly-bodwin.com/software/shindig/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/shiny/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/shiny/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/projects/polish_networks/</loc>
+    <loc>https://www.kelly-bodwin.com/projects/polish_networks/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/software/templar/</loc>
+    <loc>https://www.kelly-bodwin.com/software/templar/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/stat541/</loc>
+    <loc>https://www.kelly-bodwin.com/courses/stat541/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/course-websites/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/course-websites/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/stat331/</loc>
+    <loc>https://www.kelly-bodwin.com/courses/stat331/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/stat150/</loc>
+    <loc>https://www.kelly-bodwin.com/courses/stat150/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/</loc>
+    <loc>https://www.kelly-bodwin.com/courses/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/statistics/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/statistics/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/rworkshop-2021/</loc>
+    <loc>https://www.kelly-bodwin.com/courses/rworkshop-2021/</loc>
     <lastmod>2021-01-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/tidyverse/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/tidyverse/</loc>
     <lastmod>2021-01-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/workshops/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/workshops/</loc>
     <lastmod>2021-01-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/quarantine/</loc>
+    <loc>https://www.kelly-bodwin.com/blog/quarantine/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/random/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/random/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/education/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/education/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/talks/</loc>
+    <loc>https://www.kelly-bodwin.com/categories/talks/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/series/talks-and-presentations/</loc>
+    <loc>https://www.kelly-bodwin.com/series/talks-and-presentations/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/talks-series/</loc>
+    <loc>https://www.kelly-bodwin.com/blog/talks-series/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/rworkshop-2019/</loc>
+    <loc>https://www.kelly-bodwin.com/courses/rworkshop-2019/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/form/</loc>
+    <loc>https://www.kelly-bodwin.com/form/</loc>
     <lastmod>2019-02-25T13:38:41-06:00</lastmod>
   </url>
   
   <url>
-    <loc>/contact/</loc>
+    <loc>https://www.kelly-bodwin.com/contact/</loc>
     <lastmod>2019-02-25T13:38:41-06:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://www.kelly-bodwin.com/</loc>
     <lastmod>2019-02-18T12:27:33-06:00</lastmod>
   </url>
   
   <url>
-    <loc>/elements/</loc>
+    <loc>https://www.kelly-bodwin.com/elements/</loc>
     <lastmod>2019-02-18T12:27:33-06:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/decoder/</loc>
+    <loc>https://www.kelly-bodwin.com/courses/decoder/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/projects/authorship/</loc>
+    <loc>https://www.kelly-bodwin.com/projects/authorship/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/tidyeval/</loc>
+    <loc>https://www.kelly-bodwin.com/blog/tidyeval/</loc>
     <lastmod>2010-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>https://www.kelly-bodwin.com/about/</loc>
   </url>
   
   <url>
-    <loc>/contributors/</loc>
+    <loc>https://www.kelly-bodwin.com/contributors/</loc>
   </url>
   
   <url>
-    <loc>/license/</loc>
+    <loc>https://www.kelly-bodwin.com/license/</loc>
   </url>
   
   <url>
-    <loc>/consulting/</loc>
+    <loc>https://www.kelly-bodwin.com/consulting/</loc>
   </url>
   
 </urlset>

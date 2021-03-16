@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>talks on Kelly Bodwin</title>
-    <link>/categories/talks/</link>
+    <link>https://www.kelly-bodwin.com/categories/talks/</link>
     <description>Recent content in talks on Kelly Bodwin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/talks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelly-bodwin.com/categories/talks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Course Material Creation in the R Ecosystem  (RStudio::conf 2020 talk) </title>
-      <link>/blog/talks-series/rstudio-conf-2020/</link>
+      <link>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2020/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/talks-series/rstudio-conf-2020/</guid>
+      <guid>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introductory Statistics with R  (RStudio::conf 2019 talk) </title>
-      <link>/blog/talks-series/rstudio-conf-2019/</link>
+      <link>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2019/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/talks-series/rstudio-conf-2019/</guid>
+      <guid>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2019/</guid>
       <description></description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Kelly Bodwin</title>
-    <link>/categories/r/</link>
+    <link>https://www.kelly-bodwin.com/categories/r/</link>
     <description>Recent content in R on Kelly Bodwin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelly-bodwin.com/categories/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up a SQL database with AWS.</title>
-      <link>/blog/sql-series/01-sql/</link>
+      <link>https://www.kelly-bodwin.com/blog/sql-series/01-sql/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/sql-series/01-sql/</guid>
+      <guid>https://www.kelly-bodwin.com/blog/sql-series/01-sql/</guid>
       <description>Making a database on AmazonStep 1: Create an AWS account. I did it a long time ago, it&amp;rsquo;s pretty straightforward, I&amp;rsquo;m not going to re-do it here for no reason.
 Step 2: Follow Items 1-5 only in this tutorial to create a databaset instance.
 Step 3: Make sure you choose the free tier! Select whatever username and password you want - but it&amp;rsquo;s a pain in the butt to add additional users, so if security is not a huge concern and you want your database to be broadly accessible, choose a username and password that you&amp;rsquo;re willing to share.</description>
@@ -20,56 +20,56 @@ Step 3: Make sure you choose the free tier! Select whatever username and passwor
     
     <item>
       <title>Course Material Creation in the R Ecosystem  (RStudio::conf 2020 talk) </title>
-      <link>/blog/talks-series/rstudio-conf-2020/</link>
+      <link>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2020/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/talks-series/rstudio-conf-2020/</guid>
+      <guid>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introductory Statistics with R  (RStudio::conf 2019 talk) </title>
-      <link>/blog/talks-series/rstudio-conf-2019/</link>
+      <link>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2019/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/talks-series/rstudio-conf-2019/</guid>
+      <guid>https://www.kelly-bodwin.com/blog/talks-series/rstudio-conf-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R and SQL</title>
-      <link>/blog/sql-series/</link>
+      <link>https://www.kelly-bodwin.com/blog/sql-series/</link>
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/sql-series/</guid>
+      <guid>https://www.kelly-bodwin.com/blog/sql-series/</guid>
       <description>** No content below YAML for the series _index. This file is a leaf bundle, and provides settings for the listing page layout and sidebar content.**</description>
     </item>
     
     <item>
       <title>Differential Correlation Mining</title>
-      <link>/collection/01-method/dcm/</link>
+      <link>https://www.kelly-bodwin.com/collection/01-method/dcm/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/collection/01-method/dcm/</guid>
+      <guid>https://www.kelly-bodwin.com/collection/01-method/dcm/</guid>
       <description>DCM and stuff</description>
     </item>
     
     <item>
       <title>Differential Correlation Mining</title>
-      <link>/projects/dcm/</link>
+      <link>https://www.kelly-bodwin.com/projects/dcm/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/projects/dcm/</guid>
+      <guid>https://www.kelly-bodwin.com/projects/dcm/</guid>
       <description>Co-Authors: Andrew Nobel and Kai Zhang
 Paper AbstractGiven data obtained under two sampling conditions, it is often of interest to identify variables that behave differently in one condition than in the other. We introduce a method for differential analysis of second-order behavior called Differential Correlation Mining (DCM). The DCM method identifies differentially correlated sets of variables, with the property that the average pairwise correlation between variables in a set is higher under one sample condition than the other.</description>
     </item>
     
     <item>
       <title>flair</title>
-      <link>/software/flair/</link>
+      <link>https://www.kelly-bodwin.com/software/flair/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/software/flair/</guid>
+      <guid>https://www.kelly-bodwin.com/software/flair/</guid>
       <description>Co-authors: Hunter Glanz
 flair is a package for adding highlighting and annotation to the source code chunks produced by R Markdown. AboutThe goal of flair is to give users an easy and reproducible way to change the colors and highlighting in source code chunks. For example,
 iris %&amp;gt;%
@@ -79,49 +79,49 @@ summarize(mean(Sepal.Length))#&amp;gt; # A tibble: 3 x 2#&amp;gt; Species `me
     
     <item>
       <title>Latent Association Mining in Binary Data</title>
-      <link>/collection/01-method/lamb/</link>
+      <link>https://www.kelly-bodwin.com/collection/01-method/lamb/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/collection/01-method/lamb/</guid>
+      <guid>https://www.kelly-bodwin.com/collection/01-method/lamb/</guid>
       <description>DCM and stuff</description>
     </item>
     
     <item>
       <title>Latent Association Mining in Binary Data</title>
-      <link>/projects/lamb/</link>
+      <link>https://www.kelly-bodwin.com/projects/lamb/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/projects/lamb/</guid>
+      <guid>https://www.kelly-bodwin.com/projects/lamb/</guid>
       <description>Co-Authors: Carson Mosso, Suman Chakraborty, Andrew Nobel and Kai Zhang
 Paper Abstract:We consider the problem of identifying stable sets of mutually associated features in moderate or high-dimensional binary data. In this context we develop and investigate a method called Latent Association Mining for Binary Data (LAMB). The LAMB method is based on a simple threshold model in which the observed binary values represent a random thresholding of a latent continuous vector that may have a complex association structure.</description>
     </item>
     
     <item>
       <title>Parrotfish Predation on Coral</title>
-      <link>/projects/parrotfish/</link>
+      <link>https://www.kelly-bodwin.com/projects/parrotfish/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/projects/parrotfish/</guid>
+      <guid>https://www.kelly-bodwin.com/projects/parrotfish/</guid>
       <description>Co-Authors: Hannah Rempel and Ben Ruttenberg
 Paper AbstractParrotfishes are important Caribbean herbivores that are believed to indirectly benefit corals by grazing algae; yet, some species also feed on live coral, which may have direct negative impacts on coral growth and survivorship. Caribbean parrotfishes prey upon multiple coral species but have particularly high rates of predation on Orbicella annulari s, a major framework building coral andan endangered species.</description>
     </item>
     
     <item>
       <title>Shindig</title>
-      <link>/software/shindig/</link>
+      <link>https://www.kelly-bodwin.com/software/shindig/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/software/shindig/</guid>
+      <guid>https://www.kelly-bodwin.com/software/shindig/</guid>
       <description>Shindig is a package to make it easier to convert static code to interactive Shiny output. AboutThis package is still in development.
 The goal is to create a set of &amp;ldquo;shortcut&amp;rdquo; functions for the common task to converting basic R code into code for an interactive Shiny app. With Shindig, the user will not need to write the server-side code for the app; they will only need to specify the appearance and inputs of the user interface.</description>
     </item>
     
     <item>
       <title>Social Networks in Pre-Revolutionary Poland</title>
-      <link>/projects/polish_networks/</link>
+      <link>https://www.kelly-bodwin.com/projects/polish_networks/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/projects/polish_networks/</guid>
+      <guid>https://www.kelly-bodwin.com/projects/polish_networks/</guid>
       <description>Co-Authors: Gregory Domber and Kien Nguyen.
 Historical ContextIn 1989, the country of Poland underwent a peaceful revolution, replacing its existing Communist government with a Democratically elected one. The culminating moment of this process was a Round Table agreement reached between leaders of the Opposition and Communist groups.
 How did this movement build over the decades prior, and how did these two groups come together? Our project aims to quantify the evolution of social network between key individuals and organizations over the years before 1989.</description>
@@ -129,10 +129,10 @@ How did this movement build over the decades prior, and how did these two groups
     
     <item>
       <title>templar</title>
-      <link>/software/templar/</link>
+      <link>https://www.kelly-bodwin.com/software/templar/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/software/templar/</guid>
+      <guid>https://www.kelly-bodwin.com/software/templar/</guid>
       <description>Co-authors: Ian Flores Siaca and Desirée De Leon
 templar is a package that lets educators auto-generate repetitive course material content from R Markdown source files and yaml headers. AboutThis package is still in development.
 The goal is to create a set of templates for course material sets, such as the syllabus, assignments, exams, and labs. Information about each course will be stored in one unified yaml file, so that the materials can be updated each year (or quarter or semester) without having to hunt through each individual file and search for dates and details.</description>
@@ -140,73 +140,73 @@ The goal is to create a set of templates for course material sets, such as the s
     
     <item>
       <title>Advanced Statistical Computing with R</title>
-      <link>/courses/stat541/</link>
+      <link>https://www.kelly-bodwin.com/courses/stat541/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/courses/stat541/</guid>
+      <guid>https://www.kelly-bodwin.com/courses/stat541/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introduction to R for Statistics and Data Science</title>
-      <link>/courses/stat331/</link>
+      <link>https://www.kelly-bodwin.com/courses/stat331/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/courses/stat331/</guid>
+      <guid>https://www.kelly-bodwin.com/courses/stat331/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introduction to the Field of Statistics (and R)</title>
-      <link>/courses/stat150/</link>
+      <link>https://www.kelly-bodwin.com/courses/stat150/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/courses/stat150/</guid>
+      <guid>https://www.kelly-bodwin.com/courses/stat150/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Intro to Tidyverse Workshop Materials</title>
-      <link>/courses/rworkshop-2021/</link>
+      <link>https://www.kelly-bodwin.com/courses/rworkshop-2021/</link>
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/courses/rworkshop-2021/</guid>
+      <guid>https://www.kelly-bodwin.com/courses/rworkshop-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Talks and Presentations</title>
-      <link>/blog/talks-series/</link>
+      <link>https://www.kelly-bodwin.com/blog/talks-series/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/talks-series/</guid>
+      <guid>https://www.kelly-bodwin.com/blog/talks-series/</guid>
       <description>** No content below YAML for the series _index. This file is a leaf bundle, and provides settings for the listing page layout and sidebar content.**</description>
     </item>
     
     <item>
       <title>R Workshop Materials</title>
-      <link>/courses/rworkshop-2019/</link>
+      <link>https://www.kelly-bodwin.com/courses/rworkshop-2019/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/courses/rworkshop-2019/</guid>
+      <guid>https://www.kelly-bodwin.com/courses/rworkshop-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>&#39;decodeR&#39;: Puzzle activities for learning R</title>
-      <link>/courses/decoder/</link>
+      <link>https://www.kelly-bodwin.com/courses/decoder/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/courses/decoder/</guid>
+      <guid>https://www.kelly-bodwin.com/courses/decoder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tidy Eval is Confusing Sometimes</title>
-      <link>/blog/tidyeval/</link>
+      <link>https://www.kelly-bodwin.com/blog/tidyeval/</link>
       <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>/blog/tidyeval/</guid>
+      <guid>https://www.kelly-bodwin.com/blog/tidyeval/</guid>
       <description>ggplot2ggplot2::
 1 2  library(tidyverse) library(rlang)   IntroductionThe purpose of this document is to once and for all figure out how to use tidy eval in my functions. I keep thinking I understand it, and then messing up the next time. The last time I wrote decent working complex tidy eval code, I had Joe Motherflipping Cheng coaching me&amp;hellip; can&amp;rsquo;t count on that every time. Let&amp;rsquo;s figure this ish out.</description>
     </item>

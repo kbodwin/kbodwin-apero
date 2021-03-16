@@ -1,2 +1,2 @@
 # Redirects from what the browser requests to what we serve
-kbod.win*  https://www.kelly-bodwin.com/:splat  301!
+https://kbod.win*  https://www.kelly-bodwin.com/:splat  301!

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>biology on Kelly Bodwin</title>
-    <link>/categories/biology/</link>
+    <link>https://www.kelly-bodwin.com/categories/biology/</link>
     <description>Recent content in biology on Kelly Bodwin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/biology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.kelly-bodwin.com/categories/biology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Parrotfish Predation on Coral</title>
-      <link>/projects/parrotfish/</link>
+      <link>https://www.kelly-bodwin.com/projects/parrotfish/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/projects/parrotfish/</guid>
+      <guid>https://www.kelly-bodwin.com/projects/parrotfish/</guid>
       <description>Co-Authors: Hannah Rempel and Ben Ruttenberg
 Paper AbstractParrotfishes are important Caribbean herbivores that are believed to indirectly benefit corals by grazing algae; yet, some species also feed on live coral, which may have direct negative impacts on coral growth and survivorship. Caribbean parrotfishes prey upon multiple coral species but have particularly high rates of predation on Orbicella annulari s, a major framework building coral andan endangered species.</description>
     </item>
