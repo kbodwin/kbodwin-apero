@@ -1,7 +1,7 @@
 ---
 title: "Services"
 description: |
-  yes.
+  Consulting and private tutoring services.
 show_header: true
 sidebar_left: false
 # Keep this! Do not edit.
