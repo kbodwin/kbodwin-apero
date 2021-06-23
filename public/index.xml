@@ -81,12 +81,12 @@ install.packages(&amp;quot;distill&amp;quot;) Restart your R session. If you us
     </item>
     
     <item>
-      <title>decoder</title>
+      <title>decodeR</title>
       <link>/software/decoder/</link>
       <pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>/software/decoder/</guid>
-      <description>decoder is a collection of puzzle activities to be used in introductory R courses. AboutClick here to try the puzzles out in RStudio Cloud!</description>
+      <description>decodeR is a collection of puzzle activities to be used in introductory R courses. AboutClick here to try the puzzles out in RStudio Cloud!</description>
     </item>
     
     <item>

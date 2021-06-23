@@ -1,5 +1,5 @@
 ---
-title: "decoder"
+title: "decodeR"
 subtitle: "Puzzle activities in R."
 excerpt: "Follow the steps to decode the secret message!"
 date: 2021-06-18
@@ -13,7 +13,7 @@ categories:
   - teaching
   - r4edu
 images:
-  - /software/decoder/codex_thumbnail.png
+  - /software/decoder/codex_hex.png
 layout: single
 links:
 - icon: github
@@ -26,10 +26,10 @@ links:
   url: https://rstudio.cloud/project/2649665
 ---
 
-![codex image](codex_thumbnail.png)
 
+## [decodeR](https://github.com/kbodwin/decoder) is a collection of puzzle activities to be used in introductory R courses.
 
-## [decoder](https://github.com/kbodwin/decoder) is a collection of puzzle activities to be used in introductory R courses.
+![codex image](codex.jpeg)
 
 ---
 
