@@ -6,7 +6,7 @@
     <description>Recent content in R on Kelly Bodwin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up a SQL database with AWS.</title>
       <link>/blog/sql-series/01-sql/</link>
@@ -34,6 +34,15 @@ Step 3: Make sure you choose the free tier! Select whatever username and passwor
       
       <guid>/blog/talks-series/rstudio-conf-2019/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>decoder</title>
+      <link>/software/decoder/</link>
+      <pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/software/decoder/</guid>
+      <description>decoder is a collection of puzzle activities to be used in introductory R courses. AboutClick here to try the puzzles out in RStudio Cloud!</description>
     </item>
     
     <item>
