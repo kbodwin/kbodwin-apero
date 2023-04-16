@@ -1,0 +1,84 @@
+---
+title: "Polish Round Table Network"
+subtitle: "Accessing app and data resources."
+format: html
+editor: visual
+---
+
+## Database
+
+The core datasets for this project can be found here:
+
+### [Public Googlesheets Database](https://docs.google.com/spreadsheets/d/1C7Hxx66lVQ433TEFdBLtW_1OSwzjPOBFCvw2FfiwNgA/edit?usp=sharing)
+
+#### Submit a correction or addition
+
+Did you find a mistake in the data? Or do you have new information that can be added to enrich the dataset?
+
+If so, please submit your information, and a thorough documentation of your source(s), at this form:
+
+### [Dataset Improvement Form](https://forms.gle/tFUTZxUTArkhbFiZ6)
+
+## Shiny Application for Visualization
+
+To use the `Shiny` app to visualize networks over time, you must first install our custom R package, `PolandRoundTable`. You will need a recent version of R (ideally, 4.0+).
+
+### Installation
+
+First, run the following code to install the `remotes` package and use it to install the custom `PolandRoundTable` package.
+
+```{r, eval = FALSE}
+install.packages("remotes")
+
+remotes::install_github("kbodwin/PolandRoundTable")
+```
+
+#### Dependencies
+
+The installation process may prompt you to install some *dependencies*, or other packages that are needed for the `PolandRoundTable` package to function. Even if you already have these packages installed, it is probably a good idea to update them to the most recent version by re-installing.
+
+If you are not comfortable navigating these installs, simply run the following to insure that you have all necessary software:
+
+```{r, eval = FALSE}
+prt_dep <- c("igraph",
+    "dplyr",
+    "magrittr",
+    "purrr",
+    "lubridate",
+    "tidyr",
+    "shiny",
+    "tidygraph",
+    "plotly",
+    "shinyWidgets",
+    "devtools",
+    "shinythemes",
+    "ggraph",
+    "ggiraph",
+    "ggstar")
+
+install.packages(prt_dep)
+```
+
+### Producing the App
+
+Once you have finished all installations, you may use the app at any time. Simply open an R console and run
+
+```{r, eval = FALSE}
+PolandRoundTable::run_network_app()
+```
+
+## Citations
+
+If you make use of the raw datasets in your research, please cite:
+
+If you make use of the Shiny app in your work, please cite the datasets above, as well as the app itself:
+
+#### Feedback and Input
+
+We would love to hear from you about the exciting ways you are using our data and software to explore the history of the Polish Round Table talks!
+
+We would also be interested in hearing feature requests or bug reports, if there are ways we can improve the app or data process.
+
+Drop us a line here with any and all thoughts about this work:
+
+### [Usage Survey](https://forms.gle/iSWeEHVNtJiKPTCA6)
