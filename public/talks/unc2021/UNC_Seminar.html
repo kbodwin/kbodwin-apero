@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Tips for Teaching Data Science</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Tips for Teaching Data Science
+
+---
+
+
+
+
+
+
+class: center, middle, inverse
+
+# 1. Know your audience
+
+---
+
+## Are your students...
+
+--
+
+* ... future Statistics PhD students?
+
+--
+
+* ... future Google Data Scientists?
+
+--
+
+* ... studying something else, and taking a general-purpose DS class?
+
+---
+
+## Decisions that depend on your audience:
+
+* What level of **math** can I assume they know?  
+
+* What **math concepts** will help them in the future?
+
+--
+
+* What level of **statistics** can I assume they know?
+
+* What **statistics concepts** will help them in the future?
+
+--
+
+* What level of **programming** can I assume they know?
+
+* What **programming skills** will help them in the future?
+
+---
+class: center, middle, inverse
+
+# 2. Use specific examples, not abstractions
+
+---
+
+## Bad:
+
+Suppose we want to estimate a population mean, `\(\mu\)`, from a sample `\(x_1, ..., x_n\)`.  
+
+We can make a *confidence interval* for the population mean.
+
+---
+
+## Good:
+
+Suppose you go fishing at Jordan Lake, and catch 30 fish.  You are curious what the true average weight of all the fish in Jordan Lake is.
+
+Let's come up with a *reasonable range* of guesses based on the fish we caught.
+
+---
+
+## Why?
+
+**You** have the advantage of years of specific examples, that you now understand under the "umbrella" of concepts.
+
+--
+
+Your students probably have **no ground to build from** yet.
+
+--
+
+As you go through the course and begin to generalize, you can reference back: 
+
+"This symbol, `\(\mu\)`, represents the average of all the fish in Jordan Lake."
+
+---
+class: center, middle, inverse
+
+# 3. Leave the math at home - focus on intuition
+
+---
+
+## Bad:
+
+The equation for a **logistic regression** is
+
+`$$Y = g^{-1} \left( \beta_0 + \beta X + \epsilon \right)$$`
+
+where
+
+`$$g = \frac{\log(p)}{\log(1-p)}$$`
+
+
+We estimate `\(\beta\)` by Maximum Likelihood.
+
+---
+
+## Good:
+
+In a **logistic regression**, we assume the residuals are not normal, because the response variable is *categorical*.
+
+We transform our predictions from a linear regression to become *probabilities* of a category.
+
+We choose the coefficients that best predict the observed data.
+
+---
+## Why?
+
+* Notation adds to the **cognitive load**.
+
+--
+
+* You and I think the math is beautiful.  Not everyone does.
+
+--
+
+* A Data Scientist doesn't (necessarily) need to understand **how** a coefficient is estimated to be able to responsibly apply a method.
+
+---
+
+## What intuition is important?
+
+* In what settings is this model **appropriate**?
+
+--
+
+* What core **assumptions** does the model rely on?
+
+--
+
+* How do we measure **model success**?
+
+--
+
+* How do we **interpret** model output?
+
+
+
+---
+class: center, middle, inverse
+
+# 4. Be deliberate about your software choices
+
+---
+## Target audience:
+
+* Statistics-focused data science:  R, python, SAS
+
+--
+
+* General (industry) data science: python, R
+
+--
+
+* Data literacy: ???
+
+    - Biology -&gt; R
+    - Psychology and Social Science -&gt; SPSS?
+    - Full beginners -&gt; Excel/spreadsheets
+    
+---
+## Questions to ponder:
+
+* Is programming a **learning objective** of the course, or a **demonstration tool** for concepts?
+
+--
+
+* What **broader community** will my students belong to?
+
+--
+
+* What language(s) are **you** comfortable with?
+
+
+---
+## Resources:
+
+* RMarkdown or Jupyter
+
+    + *Notebooks:* Combine code chunks and text
+    + Teaches reproducibility
+    + Crucial teaching tool!
+    
+--
+
+* RStudio Cloud
+
+    + Skip the package install steps for students
+    + Skip the R/RStudio install steps for students
+    + Supports jupyter notebooks as well
+    + Downside: Only free for small usage
+    
+--
+
+* Google Colab
+
+    + Like Google Docs, but for jupyter notebooks
+    + Free (runs on Google's servers!)
+    + Easy to use
+    + Downside: Kind of supports R, but not really.
+    + Downside: Doesn't teach good file/data management
+    
+--
+
+* GitHub Classroom
+
+---
+class: center, middle, inverse
+
+5. Activities, not lectures
+
+---
+## Why?
+
+* There is **actual science** on education techniques.  Most academics ignore it.  It suggests activities &gt; lecture.
+
+--
+
+* **"Learn by Doing"**: Students will develop hands-on skills by practicing.
+
+--
+
+* **"Productive Frustration"**:  By encountering tasks they can't do, students will ask the "right" questions.
+
+--
+
+* It mimics the **real world**.  They are learning this for a reason, not just for intellectual enjoyment!
+
+
+---
+class: center, middle, inverse
+
+# Bonus tip: Protect your own time
+
+---
+
+## Teaching is hard!
+
+* You will **never** be 100% satisfied with your lesson!
+
+--
+
+* Decide how much time you will spend, or what your specific checkpoints are.
+
+--
+
+* You **will** make mistakes.  Use them as teaching moments.
+
+--
+
+* If you go above and beyond, seek **support from your University**:  conference attendance, release time, professional development, teaching awards/grants.
+
+---
+class: center, middle
+
+# Don't reinvent the wheel
+
+---
+## More resources
+
+* **Data 8** at Berkeley: 
+
+&gt; data8.org
+
+* **R for Data Science** and other free textbooks: 
+
+&gt; r4ds.had.co.nz
+
+* **Data Science in a Box** and other public courses:
+
+&gt; datasciencebox.org
+
+* **Me!**
+
+&gt; github.com/kbodwin
+
+&gt; twitter: @kellybodwin
+
+&gt; www.kelly-bodwin.com
+
+&gt; kelly@bodwin.us
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightLines": true,
+"highlightStyle": "github",
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

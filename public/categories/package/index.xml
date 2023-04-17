@@ -23,10 +23,10 @@
       
       <guid>/software/flair/</guid>
       <description>Co-authors: Hunter Glanz
-flair is a package for adding highlighting and annotation to the source code chunks produced by R Markdown. AboutThe goal of flair is to give users an easy and reproducible way to change the colors and highlighting in source code chunks. For example,
+flair is a package for adding highlighting and annotation to the source code chunks produced by R Markdown.      About     The goal of flair is to give users an easy and reproducible way to change the colors and highlighting in source code chunks. For example,
 iris %&amp;gt;%
 group_by(Species) %&amp;gt;%
-summarize(mean(Sepal.Length))#&amp;gt; # A tibble: 3 x 2#&amp;gt; Species `mean(Sepal.</description>
+summarize(mean(Sepal.Length))  #&amp;gt; # A tibble: 3 x 2 #&amp;gt; Species `mean(Sepal.</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@ summarize(mean(Sepal.Length))#&amp;gt; # A tibble: 3 x 2#&amp;gt; Species `me
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/software/shindig/</guid>
-      <description>Shindig is a package to make it easier to convert static code to interactive Shiny output. AboutThis package is still in development.
+      <description>Shindig is a package to make it easier to convert static code to interactive Shiny output.      About     This package is still in development.
 The goal is to create a set of &amp;ldquo;shortcut&amp;rdquo; functions for the common task to converting basic R code into code for an interactive Shiny app. With Shindig, the user will not need to write the server-side code for the app; they will only need to specify the appearance and inputs of the user interface.</description>
     </item>
     
@@ -55,7 +55,7 @@ The goal is to create a set of &amp;ldquo;shortcut&amp;rdquo; functions for the 
       
       <guid>/software/templar/</guid>
       <description>Co-authors: Ian Flores Siaca and Desirée De Leon
-templar is a package that lets educators auto-generate repetitive course material content from R Markdown source files and yaml headers. AboutThis package is still in development.
+templar is a package that lets educators auto-generate repetitive course material content from R Markdown source files and yaml headers.      About     This package is still in development.
 The goal is to create a set of templates for course material sets, such as the syllabus, assignments, exams, and labs. Information about each course will be stored in one unified yaml file, so that the materials can be updated each year (or quarter or semester) without having to hunt through each individual file and search for dates and details.</description>
     </item>
     

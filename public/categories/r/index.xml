@@ -13,7 +13,7 @@
       <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>/blog/sql-series/01-sql/</guid>
-      <description>Making a database on AmazonStep 1: Create an AWS account. I did it a long time ago, it&amp;rsquo;s pretty straightforward, I&amp;rsquo;m not going to re-do it here for no reason.
+      <description>Making a database on Amazon     Step 1: Create an AWS account. I did it a long time ago, it&amp;rsquo;s pretty straightforward, I&amp;rsquo;m not going to re-do it here for no reason.
 Step 2: Follow Items 1-5 only in this tutorial to create a databaset instance.
 Step 3: Make sure you choose the free tier! Select whatever username and password you want - but it&amp;rsquo;s a pain in the butt to add additional users, so if security is not a huge concern and you want your database to be broadly accessible, choose a username and password that you&amp;rsquo;re willing to share.</description>
     </item>
@@ -24,7 +24,7 @@ Step 3: Make sure you choose the free tier! Select whatever username and passwor
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>/blog/talks-series/rstudio-conf-2020/</guid>
-      <description></description>
+      <description> </description>
     </item>
     
     <item>
@@ -33,7 +33,7 @@ Step 3: Make sure you choose the free tier! Select whatever username and passwor
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/talks-series/rstudio-conf-2019/</guid>
-      <description></description>
+      <description>  </description>
     </item>
     
     <item>
@@ -42,7 +42,7 @@ Step 3: Make sure you choose the free tier! Select whatever username and passwor
       <pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>/software/decoder/</guid>
-      <description>decodeR is a collection of puzzle activities to be used in introductory R courses. AboutClick here to try the puzzles out in RStudio Cloud!</description>
+      <description>decodeR is a collection of puzzle activities to be used in introductory R courses.      About      Click here to try the puzzles out in RStudio Cloud!</description>
     </item>
     
     <item>
@@ -70,7 +70,7 @@ Step 3: Make sure you choose the free tier! Select whatever username and passwor
       
       <guid>/projects/dcm/</guid>
       <description>Co-Authors: Andrew Nobel and Kai Zhang
-Paper AbstractGiven data obtained under two sampling conditions, it is often of interest to identify variables that behave differently in one condition than in the other. We introduce a method for differential analysis of second-order behavior called Differential Correlation Mining (DCM). The DCM method identifies differentially correlated sets of variables, with the property that the average pairwise correlation between variables in a set is higher under one sample condition than the other.</description>
+Paper Abstract     Given data obtained under two sampling conditions, it is often of interest to identify variables that behave differently in one condition than in the other. We introduce a method for differential analysis of second-order behavior called Differential Correlation Mining (DCM). The DCM method identifies differentially correlated sets of variables, with the property that the average pairwise correlation between variables in a set is higher under one sample condition than the other.</description>
     </item>
     
     <item>
@@ -80,10 +80,10 @@ Paper AbstractGiven data obtained under two sampling conditions, it is ofte
       
       <guid>/software/flair/</guid>
       <description>Co-authors: Hunter Glanz
-flair is a package for adding highlighting and annotation to the source code chunks produced by R Markdown. AboutThe goal of flair is to give users an easy and reproducible way to change the colors and highlighting in source code chunks. For example,
+flair is a package for adding highlighting and annotation to the source code chunks produced by R Markdown.      About     The goal of flair is to give users an easy and reproducible way to change the colors and highlighting in source code chunks. For example,
 iris %&amp;gt;%
 group_by(Species) %&amp;gt;%
-summarize(mean(Sepal.Length))#&amp;gt; # A tibble: 3 x 2#&amp;gt; Species `mean(Sepal.</description>
+summarize(mean(Sepal.Length))  #&amp;gt; # A tibble: 3 x 2 #&amp;gt; Species `mean(Sepal.</description>
     </item>
     
     <item>
@@ -102,7 +102,7 @@ summarize(mean(Sepal.Length))#&amp;gt; # A tibble: 3 x 2#&amp;gt; Species `me
       
       <guid>/projects/lamb/</guid>
       <description>Co-Authors: Carson Mosso, Suman Chakraborty, Andrew Nobel and Kai Zhang
-Paper Abstract:We consider the problem of identifying stable sets of mutually associated features in moderate or high-dimensional binary data. In this context we develop and investigate a method called Latent Association Mining for Binary Data (LAMB). The LAMB method is based on a simple threshold model in which the observed binary values represent a random thresholding of a latent continuous vector that may have a complex association structure.</description>
+Paper Abstract:     We consider the problem of identifying stable sets of mutually associated features in moderate or high-dimensional binary data. In this context we develop and investigate a method called Latent Association Mining for Binary Data (LAMB). The LAMB method is based on a simple threshold model in which the observed binary values represent a random thresholding of a latent continuous vector that may have a complex association structure.</description>
     </item>
     
     <item>
@@ -112,7 +112,7 @@ Paper Abstract:We consider the problem of identifying stable sets of mutual
       
       <guid>/projects/parrotfish/</guid>
       <description>Co-Authors: Hannah Rempel and Ben Ruttenberg
-Paper AbstractParrotfishes are important Caribbean herbivores that are believed to indirectly benefit corals by grazing algae; yet, some species also feed on live coral, which may have direct negative impacts on coral growth and survivorship. Caribbean parrotfishes prey upon multiple coral species but have particularly high rates of predation on Orbicella annulari s, a major framework building coral andan endangered species.</description>
+Paper Abstract     Parrotfishes are important Caribbean herbivores that are believed to indirectly benefit corals by grazing algae; yet, some species also feed on live coral, which may have direct negative impacts on coral growth and survivorship. Caribbean parrotfishes prey upon multiple coral species but have particularly high rates of predation on Orbicella annulari s, a major framework building coral andan endangered species.</description>
     </item>
     
     <item>
@@ -121,7 +121,7 @@ Paper AbstractParrotfishes are important Caribbean herbivores that are beli
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/software/shindig/</guid>
-      <description>Shindig is a package to make it easier to convert static code to interactive Shiny output. AboutThis package is still in development.
+      <description>Shindig is a package to make it easier to convert static code to interactive Shiny output.      About     This package is still in development.
 The goal is to create a set of &amp;ldquo;shortcut&amp;rdquo; functions for the common task to converting basic R code into code for an interactive Shiny app. With Shindig, the user will not need to write the server-side code for the app; they will only need to specify the appearance and inputs of the user interface.</description>
     </item>
     
@@ -132,7 +132,7 @@ The goal is to create a set of &amp;ldquo;shortcut&amp;rdquo; functions for the 
       
       <guid>/projects/polish_networks/</guid>
       <description>Co-Authors: Gregory Domber and Kien Nguyen.
-Historical ContextIn 1989, the country of Poland underwent a peaceful revolution, replacing its existing Communist government with a Democratically elected one. The culminating moment of this process was a Round Table agreement reached between leaders of the Opposition and Communist groups.
+Historical Context     In 1989, the country of Poland underwent a peaceful revolution, replacing its existing Communist government with a Democratically elected one. The culminating moment of this process was a Round Table agreement reached between leaders of the Opposition and Communist groups.
 How did this movement build over the decades prior, and how did these two groups come together? Our project aims to quantify the evolution of social network between key individuals and organizations over the years before 1989.</description>
     </item>
     
@@ -143,7 +143,7 @@ How did this movement build over the decades prior, and how did these two groups
       
       <guid>/software/templar/</guid>
       <description>Co-authors: Ian Flores Siaca and Desirée De Leon
-templar is a package that lets educators auto-generate repetitive course material content from R Markdown source files and yaml headers. AboutThis package is still in development.
+templar is a package that lets educators auto-generate repetitive course material content from R Markdown source files and yaml headers.      About     This package is still in development.
 The goal is to create a set of templates for course material sets, such as the syllabus, assignments, exams, and labs. Information about each course will be stored in one unified yaml file, so that the materials can be updated each year (or quarter or semester) without having to hunt through each individual file and search for dates and details.</description>
     </item>
     
@@ -153,7 +153,7 @@ The goal is to create a set of templates for course material sets, such as the s
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/courses/stat541/</guid>
-      <description></description>
+      <description>  </description>
     </item>
     
     <item>
@@ -162,7 +162,7 @@ The goal is to create a set of templates for course material sets, such as the s
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/courses/stat331/</guid>
-      <description></description>
+      <description> </description>
     </item>
     
     <item>
@@ -171,7 +171,7 @@ The goal is to create a set of templates for course material sets, such as the s
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/courses/stat150/</guid>
-      <description></description>
+      <description> </description>
     </item>
     
     <item>
@@ -180,7 +180,7 @@ The goal is to create a set of templates for course material sets, such as the s
       <pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>/courses/rworkshop-2021/</guid>
-      <description></description>
+      <description>  </description>
     </item>
     
     <item>
@@ -198,7 +198,7 @@ The goal is to create a set of templates for course material sets, such as the s
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>/courses/rworkshop-2019/</guid>
-      <description></description>
+      <description>  </description>
     </item>
     
     <item>
@@ -207,7 +207,7 @@ The goal is to create a set of templates for course material sets, such as the s
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/courses/decoder/</guid>
-      <description></description>
+      <description>  </description>
     </item>
     
     <item>
@@ -217,7 +217,7 @@ The goal is to create a set of templates for course material sets, such as the s
       
       <guid>/blog/tidyeval/</guid>
       <description>ggplot2ggplot2::
-1 2  library(tidyverse) library(rlang)   IntroductionThe purpose of this document is to once and for all figure out how to use tidy eval in my functions. I keep thinking I understand it, and then messing up the next time. The last time I wrote decent working complex tidy eval code, I had Joe Motherflipping Cheng coaching me&amp;hellip; can&amp;rsquo;t count on that every time. Let&amp;rsquo;s figure this ish out.</description>
+1 2  library(tidyverse) library(rlang)    Introduction   The purpose of this document is to once and for all figure out how to use tidy eval in my functions. I keep thinking I understand it, and then messing up the next time. The last time I wrote decent working complex tidy eval code, I had Joe Motherflipping Cheng coaching me&amp;hellip; can&amp;rsquo;t count on that every time. Let&amp;rsquo;s figure this ish out.</description>
     </item>
     
   </channel>

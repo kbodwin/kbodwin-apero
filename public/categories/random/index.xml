@@ -13,9 +13,9 @@
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/blog/quarantine/</guid>
-      <description>10:29amI wake up exactly one minute before my alarm. Good job, me! I open my phone to a sea of notifications. I ignore them and open twitter to see the latest coronavirus news.
-10:30amMy alarm goes off, scaring the bejeezus out of me.
-10:45am - 10:55amI pull myself away from the stress-scrolling and take a shower.</description>
+      <description>10:29am     I wake up exactly one minute before my alarm. Good job, me! I open my phone to a sea of notifications. I ignore them and open twitter to see the latest coronavirus news.
+10:30am     My alarm goes off, scaring the bejeezus out of me.
+10:45am - 10:55am     I pull myself away from the stress-scrolling and take a shower.</description>
     </item>
     
     <item>
@@ -25,7 +25,7 @@
       
       <guid>/blog/tidyeval/</guid>
       <description>ggplot2ggplot2::
-1 2  library(tidyverse) library(rlang)   IntroductionThe purpose of this document is to once and for all figure out how to use tidy eval in my functions. I keep thinking I understand it, and then messing up the next time. The last time I wrote decent working complex tidy eval code, I had Joe Motherflipping Cheng coaching me&amp;hellip; can&amp;rsquo;t count on that every time. Let&amp;rsquo;s figure this ish out.</description>
+1 2  library(tidyverse) library(rlang)    Introduction   The purpose of this document is to once and for all figure out how to use tidy eval in my functions. I keep thinking I understand it, and then messing up the next time. The last time I wrote decent working complex tidy eval code, I had Joe Motherflipping Cheng coaching me&amp;hellip; can&amp;rsquo;t count on that every time. Let&amp;rsquo;s figure this ish out.</description>
     </item>
     
   </channel>
