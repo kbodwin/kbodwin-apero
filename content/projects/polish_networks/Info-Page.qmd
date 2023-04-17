@@ -3,6 +3,7 @@ title: "Polish Round Table Network"
 subtitle: "Accessing app and data resources."
 format: html
 editor: visual
+theme: minty
 ---
 
 ## Database
