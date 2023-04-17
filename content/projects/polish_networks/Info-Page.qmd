@@ -72,7 +72,11 @@ PolandRoundTable::run_network_app()
 
 If you make use of the raw datasets in your research, please cite:
 
+> Domber, Gregory F., & Bodwin, Kelly Nicole. (2023). Historical institutional affiliations of participants in Poland's 1989 Round Tablew \[Data set\]. Zenodo. <https://doi.org/10.5281/zenodo.7837475>
+
 If you make use of the Shiny app in your work, please cite the datasets above, as well as the app itself:
+
+> Kelly Nicole Bodwin, Nguyen, Kien, & Domber, Gregory F. (2023). kbodwin/PolandRoundTable: Application for visualizing social networks of Polish 1989 Round Table participants. (v1.0.0). Zenodo. <https://doi.org/10.5281/zenodo.7837452>
 
 #### Feedback and Input
 
