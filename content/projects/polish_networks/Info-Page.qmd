@@ -12,6 +12,10 @@ The core datasets for this project can be found here:
 
 ### [Public Googlesheets Database](https://docs.google.com/spreadsheets/d/1C7Hxx66lVQ433TEFdBLtW_1OSwzjPOBFCvw2FfiwNgA/edit?usp=sharing)
 
+Raw csv files for the dataset can also be downloaded from here:
+
+### [Data csv file page](https://zenodo.org/record/7837475#.ZD1OouxBzIg)
+
 #### Submit a correction or addition
 
 Did you find a mistake in the data? Or do you have new information that can be added to enrich the dataset?
@@ -65,7 +69,8 @@ install.packages(prt_dep)
 Once you have finished all installations, you may use the app at any time. Simply open an R console and run
 
 ```{r, eval = FALSE}
-PolandRoundTable::run_network_app()
+library(PolandRoundTable)
+run_network_app()
 ```
 
 ## Citations
